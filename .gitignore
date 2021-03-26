@@ -3,4 +3,6 @@ core.mongo*
 core.python*
 env.py
 __pycache__/
+*.pyc
 *.py[cod]
+*.sqlite3
