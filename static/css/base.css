@@ -7,7 +7,8 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'Righteous', cursive;
+    /* font-family: 'Lato'; */
 }
 
 /* from Bulma */
@@ -17,6 +18,14 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+}
+
+.top-banner {
+    background-color: #ee959e9e
+}
+
+.delivery-banner {
+    background-color: #0000008f;
 }
 
 .logo-font {
@@ -38,16 +47,28 @@ body {
 }
 
 .logo-icon {
-    color: #ee959e;
+    color: #ffffff;
+    /* color: #ee959e; */
 }
 
 .search-button {
     background-color: #ee959e;
+    /* background-color: #acafb5; */
+    /* background-color: black; */
 }
 
-/* .search-icon {
-    color: #ee959e;
-} */
+.search-icon {
+    color: white;
+    /* color: #ee959e; */
+} 
+
+.account-icon {
+    color: white;
+}
+
+.bag-icon {
+    color: white;
+}
 
 .btn-black {
     background: black;
