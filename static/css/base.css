@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    background: url('/media/homepage-background-cropped.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -30,8 +30,24 @@ body {
 .shop-now-button {
     background: black;
     color: white;
-    min-width: 260px;
+    min-width: 4em;
 }
+
+.shop-button-icon {
+    color: #ee959e;
+}
+
+.logo-icon {
+    color: #ee959e;
+}
+
+.search-button {
+    background-color: #ee959e;
+}
+
+/* .search-icon {
+    color: #ee959e;
+} */
 
 .btn-black {
     background: black;
@@ -58,6 +74,11 @@ body {
 
 .bg-black {
     background: #000 !important;
+}
+
+.main-title {
+   color: #ee959e;
+   /* color: #a65b62; */
 }
 
 

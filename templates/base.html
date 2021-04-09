@@ -48,7 +48,7 @@
 
                 <div class="my-auto col-12 col-lg-4 py-1 py-lg-0 text-center text-lg-left">
                     <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                        <h2 class="logo-font text-black my-0"><strong>K-9</strong>Kit</h2>
+                        <h2 class="logo-font text-black my-0"><strong>K-9</strong> <i class="fas fa-paw logo-icon"></i> Kit</h2>
                     </a>
                 </div>
 
@@ -56,11 +56,11 @@
 
                     <form method="GET" action="">
                         <div class="input-group w-100">
-                            <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search doggie apparel">
+                            <input class="form-control border rounded-5" type="text" name="q" placeholder="Search doggie apparel">
                             <div class="input-group-append">
-                                <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                                <button class="form-control btn border rounded-5 search-button" type="submit">
                                     <span class="icon">
-                                        <i class="fas fa-search"></i>
+                                        <i class="fas fa-search search-icon"></i>
                                     </span>
                                 </button>
                             </div>
@@ -83,7 +83,7 @@
                             <div class="dropdown-menu border-0" aria-labelledby="user-options">
                                 {% if request.user.is_authenticated %}
                                     {% if request.user.is_superuser %}
-                                        <a href="" class="dropdown-item">Manage site</a>
+                                        <a href="" class="dropdown-item">Manage Site</a>
                                     {% endif %}
                                     <a href="" class="dropdown-item">My Profile</a>
                                     <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -100,9 +100,9 @@
                                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                     <p class="my-0">
                                         {% if grand_total %}
-                                            ${{ grand_total|floatformat:2 }}
+                                            £{{ grand_total|floatformat:2 }}
                                         {% else %}
-                                            $0.00
+                                            £0.00
                                         {% endif %}
                                     </p>
                                 </div>
@@ -126,7 +126,7 @@
 
             <div id="delivery-banner" class="row text-center">
                 <div class="col bg-black text-white">
-                    <h4 class="logo-font my-1">Free nationwide delivery on orders over £30!{{ free_delivery_threshold }}!</h4>                
+                    <h4 class="logo-font my-1">Free nationwide delivery on orders over £{{ free_delivery_threshold }}!</h4>                
                 </div>    
             </div>
 
