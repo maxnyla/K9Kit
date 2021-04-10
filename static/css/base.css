@@ -21,7 +21,9 @@ body {
 }
 
 .top-banner {
-    background-color: #ee959e9e
+    background-color: #00ffffe6;
+    /* background-color: #00ffff75; */
+    /* background-color: #ee959e9e */
 }
 
 .delivery-banner {
@@ -36,6 +38,10 @@ body {
     width: fit-content;
 }
 
+.index-title-bg {
+    background-color: #273e6542;
+}
+
 .shop-now-button {
     background: black;
     color: white;
@@ -43,7 +49,8 @@ body {
 }
 
 .shop-button-icon {
-    color: #ee959e;
+    color: #00ffffe6;
+    /* color: #ee959e; */
 }
 
 .logo-icon {
@@ -52,7 +59,8 @@ body {
 }
 
 .search-button {
-    background-color: #ee959e;
+    background-color:#00ffff75;
+    /* background-color: #ee959e; */
     /* background-color: #acafb5; */
     /* background-color: black; */
 }
@@ -98,7 +106,9 @@ body {
 }
 
 .main-title {
-   color: #ee959e;
+    color: #00ffffe6;
+    /* color: #00ffff75; */
+   /* color: #ee959e; */
    /* color: #a65b62; */
 }
 
