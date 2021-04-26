@@ -43,6 +43,7 @@
         <title>K-9 Kit {% block extra_title %} {% endblock %}</title>
     </head>
     <body>
+    
         <header class="container-fluid fixed-top">
             <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
 
@@ -124,14 +125,14 @@
                 </nav>
             </div>
 
-            <div id="delivery-banner" class="row text-center">
+            <div id="delivery-banner-id" class="row text-center delivery-banner">
                 <div class="col delivery-banner text-white">
                     <h4 class="logo-font my-1">Free nationwide delivery on orders over £{{ free_delivery_threshold }}!</h4>                
                 </div>    
             </div>
 
         </header>
-        
+      
 
 
         {% if messages %}
@@ -150,8 +151,8 @@
 
 
         <!--Footer start-->
-        <footer class="my-footer mt-3">
-            <div class="container">
+        <footer class="container-fluid my-footer mt-3">
+            <!-- <div class="container"> -->
                 <div class="row justify-content-center">
                     <div class="col-3">
                         <div class="footer-social">
@@ -161,18 +162,18 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
 
-            <div class="footer-cr mb-5">  
+                <div class="footer-cr mb-5">  
                     <div class="row">
                         <div class="col-9">
-                                <div class="footer-cr-text1 mb-5">© K9-Kit 2021</div>
+                                <div class="footer-cr-text1 mb-5 ml-5">Home</div>
                         </div>
                         <div class="col-3">
                             <a class="footer-cr-text2 mb-5"><i class="fas fa-hand-point-up footer-cr-icon"></i>  Back to top </i></a>
                         </div>
                     </div>
-            </div>
+                </div>
         </footer>
         <!--Footer end-->
     </body>

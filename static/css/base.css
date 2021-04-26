@@ -21,13 +21,18 @@ html {
 }
 
 .top-banner {
-    background-color: #00ffffe6;
+    background-color: #4c7db3;
+    margin-left: 1px;
+    margin-right: 1px;
+    /* background-color: #00ffffe6; */
     /* background-color: #00ffff75; */
     /* background-color: #ee959e9e */
 }
 
 .delivery-banner {
     background-color: #0000008f;
+    margin-left: 1px;
+    margin-right: 1px;
 }
 
 .logo-font {
@@ -49,17 +54,20 @@ html {
 }
 
 .shop-button-icon {
+
     color: #00ffffe6;
     /* color: #ee959e; */
 }
 
 .logo-icon {
-    color: #ffffff;
+    color: #4c7db3;
+    /* color: #ffffff; */
     /* color: #ee959e; */
 }
 
 .search-button {
-    background-color:#00ffff75;
+    background-color: #4c7db3;
+    /* background-color:#00ffff75; */
     /* background-color: #ee959e; */
     /* background-color: #acafb5; */
     /* background-color: black; */
@@ -67,15 +75,18 @@ html {
 
 .search-icon {
     color: white;
+    /* color: white; */
     /* color: #ee959e; */
 } 
 
 .account-icon {
-    color: white;
+    color: #4c7db3;
+    /* color: white; */
 }
 
 .bag-icon {
-    color: white;
+    color: #4c7db3;
+    /* color: white; */
 }
 
 .btn-black {
@@ -113,26 +124,51 @@ html {
 }
 
 
+#first-block {
+    /* background: url('/media/homepage-background-cropped.jpg') no-repeat center center fixed; */
+    background: url('/media/home2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#second-block {
+    background-color: #b8c6dd;
+}
+
+#third-block {
+    background: url('/media/home3.jpg') no-repeat center center fixed;
+    /* background: url('/media/homepage-background2-cropped.jpg') no-repeat center center fixed; */
+    /* background: url('/media/homepage-background-cropped.jpg') no-repeat center center fixed; */
+    /* background: url('/media/home2.jpg') no-repeat center center fixed; */
+    background-size: cover;
+}
+
+
+#fourth-block {
+    background-color: #b8c6dd38;
+    /* background-color: #14fafa21; */
+    /* background-color: pink; */
+}
+
 
 .social-text {
-    color: black;
+    color: #4c7db3;
 }
 
 .footer-social-icon {
-    color: black
+    color: #4c7db3;
 }
 
 
 .footer-cr-text1 {
-    color:black;
+    color: #4c7db3;
 }
 
 .footer-cr-text2 {
-    color:black;
+    color: #4c7db3;
 }
 
 .footer-cr-icon {
-    color:black;
+    color: #4c7db3;
 }
 
 
