@@ -131,22 +131,19 @@ html {
 }
 
 #second-block {
-    background-color: #b8c6dd;
+    background-color: #b8c6dd38;
+    /* background-color: #b8c6dd; */
 }
 
 #third-block {
     background: url('/media/home3.jpg') no-repeat center center fixed;
-    /* background: url('/media/homepage-background2-cropped.jpg') no-repeat center center fixed; */
-    /* background: url('/media/homepage-background-cropped.jpg') no-repeat center center fixed; */
-    /* background: url('/media/home2.jpg') no-repeat center center fixed; */
     background-size: cover;
 }
 
 
 #fourth-block {
-    background-color: #b8c6dd38;
-    /* background-color: #14fafa21; */
-    /* background-color: pink; */
+    background-color: #b8c6dd;
+    /* background-color: #b8c6dd38; */
 }
 
 
