@@ -50,11 +50,13 @@ html {
 .shop-now-button {
     background: black;
     color: white;
-    min-width: 4em;
+    /* min-width: 4em; */
+    border-radius: 2em;
+    padding: 1em;
+    margin-left: 8em;
 }
 
 .shop-button-icon {
-
     color: #00ffffe6;
     /* color: #ee959e; */
 }
@@ -124,28 +126,49 @@ html {
 }
 
 
-#first-block {
+#block-one {
     /* background: url('/media/homepage-background-cropped.jpg') no-repeat center center fixed; */
-    background: url('/media/home2.jpg') no-repeat center center fixed;
+    background: url('/media/home2.jpg') no-repeat center center;
+    background-attachment: fixed;
     background-size: cover;
 }
 
-#second-block {
+#block-two {
     background-color: #b8c6dd38;
+    height: 80vh;
     /* background-color: #b8c6dd; */
 }
 
-#third-block {
-    background: url('/media/home3.jpg') no-repeat center center fixed;
+#block-three {
+    background: url('/media/home3.jpg') no-repeat center center;
+    background-attachment: fixed;
     background-size: cover;
 }
 
 
-#fourth-block {
+#block-four {
     background-color: #b8c6dd;
     /* background-color: #b8c6dd38; */
 }
 
+.block-two-intro {
+    background-color: #6f98c5;
+    border-radius: 80px;
+}
+
+.block-two-h4 {
+    
+}
+
+.block-two-text {
+    background-color: ghostwhite;
+    border-radius: 3em;
+    padding: 2em;
+}
+
+.block-two-inside {
+    margin-bottom: 2em;
+}
 
 .social-text {
     color: #4c7db3;
