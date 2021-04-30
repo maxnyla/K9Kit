@@ -170,28 +170,71 @@ html {
     margin-bottom: 2em;
 }
 
+
+.footer-social {
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+
+.footer-social-list {
+
+}
+
+.social-list-item {
+
+}
+
 .social-text {
-    color: #4c7db3;
+    color: #03698c;
+    /* color: #4c7db3; */
+    padding-bottom: .3em;
 }
 
 .footer-social-icon {
-    color: #4c7db3;
+    color: #03698c;
+    /* color: #4c7db3; */
+    /* color: #2a4f77; */
 }
 
 
+.footer-cr {
+    background-color: #eff2f8;
+    padding-top: 3em;
+}
+
 .footer-cr-text1 {
-    color: #4c7db3;
+    color: #03698c;
+    /* color: #2a4f77; */
+    /* color: #4c7db3; */
 }
 
 .footer-cr-text2 {
-    color: #4c7db3;
+    color: #03698c;
+    /* color: #2a4f77; */
+    /* color: #4c7db3; */
 }
 
 .footer-cr-icon {
-    color: #4c7db3;
+    color: #03698c;
+    /* color: #4c7db3 */
+    /* color: #0070eb; */
 }
 
 
+.shop-now {
+    background-color: white;
+    margin-left: 10em;
+    margin-right: 10em;
+    padding: 1em;
+}
+
+.back-top {
+    background-color: white;
+    margin-left: 10em;
+    margin-right: 10em;
+    padding: 1em;
+}
 
 
 
