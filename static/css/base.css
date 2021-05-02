@@ -21,7 +21,8 @@ html {
 }
 
 .top-banner {
-    background-color: #4c7db3;
+    background-color: #aad3ff;
+    /* background-color: #4c7db3; */
     margin-left: 1px;
     margin-right: 1px;
 }
@@ -35,7 +36,6 @@ html {
 .logo-font {
     text-transform: uppercase;
 }
-
 
 .banner-text {
     text-transform: uppercase;
@@ -220,6 +220,7 @@ html {
 }
 
 .products-title {
+    color: #2d81aa;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
