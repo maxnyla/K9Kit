@@ -36,6 +36,12 @@ html {
     text-transform: uppercase;
 }
 
+
+.banner-text {
+    text-transform: uppercase;
+    color: #00e7ff;
+}
+
 .main-logo-link {
     width: fit-content;
 }
@@ -218,6 +224,13 @@ html {
     font-weight: 500;
     text-transform: uppercase;
 }
+
+
+
+
+
+
+
 
 
 /* -------------------------------- Media Queries */
