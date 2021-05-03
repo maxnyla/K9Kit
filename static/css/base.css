@@ -227,7 +227,10 @@ html {
     text-transform: uppercase;
 }
 
-
+.product-detail-img {
+    height: 500px;
+    width: 600px;
+}
 
 
 
