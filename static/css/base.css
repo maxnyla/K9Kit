@@ -126,6 +126,14 @@ html {
     height: 80vh;
 }
 
+
+#product-detail-block-two {
+    background-color: #b8c6dd38;
+    height: 80vh;
+}
+
+
+
 #block-three {
     background: url('/media/home3.jpg') no-repeat center center;
     background-attachment: fixed;
@@ -152,6 +160,29 @@ html {
 .block-two-inside {
     margin-bottom: 2em;
 }
+
+
+.product-detail-block-two-intro {
+    background-color: #6f98c5;
+    border-radius: 80px;
+}
+
+
+.product-detail-block-two-text {
+    background-color: ghostwhite;
+    border-radius: 3em;
+    padding: 2em;
+}
+
+.product-detail-block-two-inside {
+    margin-bottom: 2em;
+}
+
+.product-detail-accord {
+    margin-bottom: 5em;
+}
+
+
 
 .footer-social {
     padding-top: 3em;
