@@ -243,6 +243,9 @@ html {
 .card-body-text {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
+    color: #2c65b3;
+    font-size: larger;
+    letter-spacing: .1em;
     /* font-family: 'Anton', sans-serif; */
     /* font-family: 'Righteous', cursive; */
 }
@@ -259,8 +262,10 @@ html {
 }
 
 .product-detail-img {
-    height: 500px;
-    width: 600px;
+    height: 35em;
+    width: 35em;
+    /* margin: 2em; */
+    padding: 2em;
 }
 
 .product-img {
@@ -271,8 +276,44 @@ html {
 .prod-img {
     display:flex;
     justify-content: center;
+    padding-top: 1.1em;
 }
 
+.product-card-wrapper {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.product-detail-info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6em;
+    padding: 3em;
+}
+
+.product-price {
+   color: #2c65b3;
+}
+
+.prod-category {
+    color: #4b6b14;
+
+}
+
+.prod-rating {
+    color: #ab830b;
+}
+
+.card-detail-text {
+    color: #2c65b3;
+    font-size: largest;
+    font-weight: 500;
+}
+
+.card-detail-body-text {
+    color: #2c65b3;
+    font-size: larger;
+}
 
 
 

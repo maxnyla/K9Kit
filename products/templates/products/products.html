@@ -23,44 +23,44 @@
                 <div class="row mt-1 mb-2"> </div>
                 <div class="row">
                     {% for product in products %}
-                        <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="col-sm-6 col-md-6 col-lg-4 product-card-wrapper">
                             <div class="card h-100 product-card">
                                 {% if product.image %}
-                                <a href="{% url 'product_detail' product.id %}">
+                                <a href="{% url 'product_detail' product.id %}" class="stretched-link">
                                     <div class="prod-img">
                                     <img class="card-img-top img-thumbnail product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                                     </div>
                                 </a>
                                 {% else %}
-                                <a href="{% url 'product_detail' product.id %}">
+                                <a href="{% url 'product_detail' product.id %}" class="stretched-link">
                                     <div class="prod-img">
                                     <img class="card-img-top img-thumbnail product-img" src="https://cdn.shopify.com/s/files/1/0084/1603/4901/products/Torrential_Tracker_in_Yellow_Canada_Pooch_Dog_Raincoat_size..20_front_520x.progressive.jpg" alt="{{ product.name }}">
                                 </div>
                                 </a>
                                 {% endif %}
-                                <div class="card-body pb-0">
-                                    <p class="mb-0 card-body-text">{{ product.name }}</p>
+                                <div class="card-body pb-2 text-center">
+                                    <p class="card-body-text font-weight-bold">{{ product.name }}</p>
                                 </div>
-                                <div class="card-footer pt-0 border-0 text-left">
+                                <div class="card-footer border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">£ {{ product.price }}</p>
+                                            <p class="lead mb-0 text-left font-weight-bold product-price">£ {{ product.price }}</p>
                                             {% if product.category %}
-                                            <p class="small mt-1 mb-0">
-                                                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                            <p class="small mt-2 mb-2">
+                                                <a class="prod-category" href="{% url 'products' %}?category={{ product.category.name }}">
                                                     <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                                 </a>
                                             </p>
                                             {% endif %}
                                             {% if product.rating %}
-                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                                                <small class="prod-rating"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                                             {% else %}
-                                                <small class="text-muted">No Rating</small>
+                                                <small class="prod-rating">No Rating</small>
                                             {% endif %}
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
-                                                    <a class="edit-product-button" href="">Edit</a> | 
-                                                    <a class="text-danger" href="">Delete</a>
+                                                    <a class="edit-product-button font-weight-bold" href="">Edit</a> | 
+                                                    <a class="text-danger font-weight-bold" href="">Delete</a>
                                                 </small>
                                             {% endif %}
                                         </div>

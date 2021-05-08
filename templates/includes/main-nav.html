@@ -10,10 +10,10 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="{% url 'products' %} " class="dropdown-item">All Products</a>
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %} " class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -22,11 +22,11 @@
                 Clothing
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+                <a href="{% url 'products' %}?category=tops,bottoms,frocks,hoodies" class="dropdown-item">All Clothing</a>
                 <a href="{% url 'products' %}?category=tops" class="dropdown-item">Tops</a>
                 <a href="{% url 'products' %}?category=bottoms" class="dropdown-item">Bottoms</a>
                 <a href="{% url 'products' %}?category=frocks" class="dropdown-item">Frocks</a>
                 <a href="{% url 'products' %}?category=hoodies" class="dropdown-item">Hoodies</a>
-                <a href="{% url 'products' %}?category=tops,bottoms,frocks,hoodies" class="dropdown-item">All Clothing</a>
             </div>
         </li>
 
