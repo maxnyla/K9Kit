@@ -264,11 +264,14 @@ html {
 }
 
 .product-img {
-    height: 500px;
-    width: 600px;
+    height: 23em;
+    width: 23em;
 }
 
-
+.prod-img {
+    display:flex;
+    justify-content: center;
+}
 
 
 
