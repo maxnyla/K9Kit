@@ -23,14 +23,14 @@ html {
 .top-banner {
     background-color: #aad3ff;
     /* background-color: #4c7db3; */
-    margin-left: 1px;
-    margin-right: 1px;
+    /* margin-left: 1px;
+    margin-right: 1px; */
 }
 
 .delivery-banner {
     background-color: #0000008f;
-    margin-left: 1px;
-    margin-right: 1px;
+    /* margin-left: 1px;
+    margin-right: 1px; */
 }
 
 .logo-font {
@@ -376,6 +376,24 @@ html {
     padding: 1.2em;
     margin-left: .5em;
 }
+
+a.category-badge > span.badge:hover{
+    background: #a51979 !important;
+    color: #fff !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* -------------------------------- Media Queries */
