@@ -52,10 +52,10 @@ html {
 
 .shop-now-button {
     background: black;
-    color: white;
     border-radius: 2em;
-    padding: 1em;
-    margin-left: 8em;
+    color: white;
+    margin-top: 2em;
+    padding: 1.5em;  
 }
 
 .shop-button-icon {
@@ -154,6 +154,8 @@ html {
 .block-two-text {
     background-color: ghostwhite;
     border-radius: 3em;
+    color: #dd26a0;
+    font-weight:600;
     padding: 2em;
 }
 
