@@ -316,6 +316,64 @@ html {
 }
 
 
+.reg-title  {
+    color: #000000;
+    margin: .5em;
+    margin-left: 1em;
+}
+
+.reg-title-bold {
+    color: #dd26a0;
+    font-weight:600;
+    
+    text-transform: uppercase;
+}
+
+.reg-text {
+    text-transform: uppercase;;
+}
+
+.reg-wrapper {
+
+}
+
+.reg-main {
+    
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.5);
+    background: #d7baa600;
+    box-shadow: 0 35px 50px #0a1516c9;
+    height: 20em;
+    margin-bottom: 6em;
+    margin: 3em;
+    padding: 2em;
+    width: 34em;
+}
+
+.label {
+    color:grey;
+}
+
+
+.btn-pink {
+    border-radius: 2em;
+    color: #f8f9fa;
+    background-color: #a51979;
+    letter-spacing: .1em;
+    font-size: large;
+    margin: 1em;
+    padding: 1em;
+}
+
+
+.btn-white {
+    border-radius: 1.5em;
+    background-color: white;
+    padding: 1.2em;
+    margin-left: .5em;
+}
 
 
 /* -------------------------------- Media Queries */
