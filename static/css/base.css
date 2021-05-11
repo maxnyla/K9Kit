@@ -383,7 +383,20 @@ a.category-badge > span.badge:hover{
 }
 
 
+.btn-up {
+    background-color: white;
+    color: #a51979;
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 
+}
+
+.btt-link{
+    cursor: pointer;
+}
 
 
 
