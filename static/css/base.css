@@ -12,7 +12,8 @@ html {
 }
 
 .top-banner {
-    background-color: #aad3ff;
+    background-color:#dd26a0;
+    /* background-color: #aad3ff; */
     /* background-color: #4c7db3; */
     /* margin-left: 1px;
     margin-right: 1px; */
@@ -30,7 +31,8 @@ html {
 
 .banner-text {
     text-transform: uppercase;
-    color: #00e7ff;
+    color: white;
+    /* color: #00e7ff; */
 }
 
 .main-logo-link {
@@ -39,6 +41,11 @@ html {
 
 .index-title-bg {
     background-color: #273e6542;
+}
+
+
+.navbar-toggler-icon {
+    color: white;
 }
 
 .shop-now-button {
@@ -217,12 +224,12 @@ html {
 }
 
 .social-text {
-    color: #03698c;
+    color: #dd26a0;
     padding-bottom: .3em;
 }
 
 .footer-social-icon {
-    color: #03698c;
+    color: #dd26a0;
 }
 
 .footer-cr {
@@ -384,7 +391,8 @@ html {
 .btn-pink {
     border-radius: 2em;
     color: #f8f9fa;
-    background-color: #a51979;
+    background-color: #dd26a0;
+    /* background-color: #a51979; */
     letter-spacing: .1em;
     font-size: large;
     margin: 1em;
