@@ -60,13 +60,13 @@
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}" class="stretched-link">
                                     <div class="prod-img">
-                                    <img class="card-img-top img-thumbnail product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    <img class="card-img-top img-thumbnail product-img rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
                                     </div>
                                 </a>
                                 {% else %}
                                 <a href="{% url 'product_detail' product.id %}" class="stretched-link">
                                     <div class="prod-img">
-                                    <img class="card-img-top img-thumbnail product-img" src="https://cdn.shopify.com/s/files/1/0084/1603/4901/products/Torrential_Tracker_in_Yellow_Canada_Pooch_Dog_Raincoat_size..20_front_520x.progressive.jpg" alt="{{ product.name }}">
+                                    <img class="card-img-top img-thumbnail product-img rounded" src="https://cdn.shopify.com/s/files/1/0084/1603/4901/products/Torrential_Tracker_in_Yellow_Canada_Pooch_Dog_Raincoat_size..20_front_520x.progressive.jpg" alt="{{ product.name }}">
                                 </div>
                                 </a>
                                 {% endif %}

@@ -300,6 +300,11 @@ html {
     width: 23em;
 }
 
+.bag-img {
+    height: 15em;
+    width: 15em;
+}
+
 .prod-img {
     display:flex;
     justify-content: center;
