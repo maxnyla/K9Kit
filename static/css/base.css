@@ -2,15 +2,6 @@ html {
     height: 100%;
 }
 
-/* body {
-    background: url('/media/homepage-background-cropped.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Righteous', cursive;
-
-} */
-
 /* from Bulma */
 .icon { 
     align-items: center;
@@ -82,20 +73,53 @@ html {
     color: #4c7db3;
 }
 
-.btn-black {
-    background: black;
+.btn-add-bag {
+    background-color: #dd26a0;
+    border: 1px solid #dd26a0;
     color: white;
+    font-weight: bold;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
+.btn-add-bag:hover,
+.btn-add-bag:active,
+.btn-add-bag:focus {
+    color: #fcf6a2;
+    /* color: black; */
+    font-style: italic;
+}
+
+.btn-back-shop {
+    background: black;
+    color: white;
+    /* color: black !important;  */
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.btn-back-shop:hover,
+.btn-back-shop:active,
+.btn-back-shop:focus {
+    color: #00ffffe6;
+    font-style: italic;
+    /* color: white !important; */
+}
+
+
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
     background: #222;
     color: white;
 }
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus {
+    background: #dd26a0;
+    color: white;
+
+}
+
 
 .text-black {
     color: #000 !important;
@@ -133,7 +157,6 @@ html {
 }
 
 
-
 #block-three {
     background: url('/media/home3.jpg') no-repeat center center;
     background-attachment: fixed;
@@ -163,6 +186,9 @@ html {
     margin-bottom: 2em;
 }
 
+.block-two-h4 {
+    color: white;
+}
 
 .product-detail-block-two-intro {
     background-color: #6f98c5;
@@ -183,7 +209,6 @@ html {
 .product-detail-accord {
     margin-bottom: 5em;
 }
-
 
 
 .footer-social {
@@ -327,7 +352,6 @@ html {
 .reg-title-bold {
     color: #dd26a0;
     font-weight:600;
-    
     text-transform: uppercase;
 }
 
@@ -335,13 +359,6 @@ html {
     text-transform: uppercase;;
 }
 
-.reg-wrapper {
-
-}
-
-.reg-main {
-    
-}
 
 .box {
     background-color: rgba(0, 0, 0, 0.5);
