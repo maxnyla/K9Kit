@@ -26,13 +26,13 @@ class StripeWH_Handler:
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-
+        
         send_mail(
             subject,
             body,
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
-        )
+        )      
 
     def handle_event(self, event):
         """
@@ -45,7 +45,7 @@ class StripeWH_Handler:
 
     def handle_payment_intent_succeeded(self, event):
         """
-        Handle the payment_intent.succeeded webhook from Stripe
+        Handle the payment_intent_succeeded webhook from Stripe
         """
         intent = event.data.object
         pid = intent.id
@@ -74,7 +74,7 @@ class StripeWH_Handler:
                 profile.default_street_address1 = shipping_details.address.line1
                 profile.default_street_address2 = shipping_details.address.line2
                 profile.default_county = shipping_details.address.state
-                profile.save()
+                profile.save()        
 
         order_exists = False
         attempt = 1
@@ -94,7 +94,7 @@ class StripeWH_Handler:
                     original_bag=bag,
                     stripe_pid=pid,
                 )
-                order_exists = True
+                order_exists = True       
                 break
             except Order.DoesNotExist:
                 attempt += 1
@@ -102,9 +102,9 @@ class StripeWH_Handler:
         if order_exists:
             self._send_confirmation_email(order)
             return HttpResponse(
-                content=(f'Webhook received: {event["type"]} | SUCCESS: '
-                         'Verified order already in database'),
-                status=200)
+                    content=(f'Webhook received: {event["type"]} | SUCCESS: '
+                        'Verified order already in database'),
+                    status=200)
         else:
             order = None
             try:
