@@ -30,7 +30,6 @@ def all_products(request):
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
-
             products = products.order_by(sortkey)
 
         if 'category' in request.GET:
@@ -38,7 +37,6 @@ def all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-    if request.GET:
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -74,12 +72,21 @@ def product_detail(request, product_id):
 
 
 def add_product(request):
-    """ Add a product to the store """
-    form = ProductForm()
+    """ Add new products """
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Product was successfully added')
+            return redirect(reverse('add_product'))
+        else:
+            messages.error(request, 'Failed to add product. Please check the form is valid.')
+    else:
+        form = ProductForm()
+        
     template = 'products/add_product.html'
     context = {
         'form': form,
     }
 
     return render(request, template, context)
-    
