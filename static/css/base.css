@@ -197,6 +197,15 @@ html {
     color: white;
 }
 
+.reviews-text {
+    background-color: ghostwhite;
+    border-radius: 3em;
+    color: #dd26a0;
+    /*font-weight:600;*/
+    /*padding: 2em;*/
+}
+
+
 .product-detail-block-two-intro {
     background-color: #6f98c5;
     border-radius: 80px;
