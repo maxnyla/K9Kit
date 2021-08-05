@@ -5,6 +5,14 @@
                 Home
             </a>
         </li>
+
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="/" id="home2-link">
+                Home
+            </a>
+        </li>
+
+
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
@@ -54,6 +62,15 @@
         </li>
 
         <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-white" href="{% url 'reviews' %}" id="reviews-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Reviews
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="reviews-link">
+                <a href="{% url 'reviews' %}?category=reviews" class="dropdown-item">Shop Reviews</a>
+            </div>
+        </li>
+
+         <!--<li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-white" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
@@ -62,6 +79,7 @@
                 <a href="{% url 'products' %}?category=special_deals" class="dropdown-item">Special Deals</a>
                 <a href="{% url 'products' %}?category=sale" class="dropdown-item">Sale</a>
             </div>
-        </li>
+        </li>*/-->
+
     </ul>
 </div>
