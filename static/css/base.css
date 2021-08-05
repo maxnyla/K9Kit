@@ -242,21 +242,35 @@ html {
 }
 
 .footer-cr {
-    background-color: #aad3ffbf;
+    background-color: #dd26a0;
+    /*background-color: #aad3ffbf;*/
     /* background-color: #eff2f8; */
     padding-top: 3em;
 }
 
 .footer-cr-text1 {
-    color: #03698c;
+    color: white;
+    /*color: #03698c;*/
 }
 
 .footer-cr-text2 {
-    color: #03698c;
+    color:#dd26a0;
+    /*color: #03698c;*/
+}
+
+
+.footer-cr-text3 {
+    color: white;
+    /*color: #03698c;*/
 }
 
 .footer-cr-icon {
-    color: #03698c;
+    color: white;
+    /*color: #03698c;*/
+}
+
+.footer-cr-icon2 {
+    color:#dd26a0;
 }
 
 .login {
