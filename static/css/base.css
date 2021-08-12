@@ -459,6 +459,73 @@ input[name='q']::placeholder {
 }
 
 
+.review-card {
+    border-color: #2c65b3;
+    /*border-color: #2d81aa;*/
+    /*border-color: #dd26a0;*/
+}
+
+.review-title {
+    color: #dd26a0;
+    /*color: #2c65b3;*/
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.review-subtitle {
+    color: #dd26a0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.review-text {
+    color: #2c65b3;
+}
+
+.review-icon {
+    color: #dd26a0;
+    /*color: #2c65b3;*/
+}
+
+
+.review-button {
+    /*background: #2c65b3;*/
+    /*border-radius: 1em;*/
+    color: white;
+    margin-top: 1em;
+    padding: 1em;
+    border-color: #2c65b3;
+}
+
+.review-button-icon {
+    color: #00ffffe6;
+}
+
+
+.edit-review {
+    color: #dd26a0;
+}
+
+
+.delete-review {
+    color: #9eabd2;
+    /*color: #dd26a0;*/
+}
+
+
+.btn-review-page {
+    /*border-radius: 2em;*/
+    color: #f8f9fa;
+    background-color: #dd26a0;
+    letter-spacing: .1em;
+    font-size: large;
+    margin: .5em;
+    padding: .5em;
+}
+
+
 /* ------------------------------- bootstrap toasts ---------------------------------------- */
 
 .message-container {
