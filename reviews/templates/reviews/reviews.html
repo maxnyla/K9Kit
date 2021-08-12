@@ -24,7 +24,7 @@
    </div>
 </div>
 
-<!-- / Reviews  -->
+<!-- Review page  -->
 <div class="container review-container">
    <div class="row">
       {% for review in reviews %}
@@ -48,22 +48,34 @@
       </div>
       {% endfor %} 
    </div>
-   <div class="row ">
-      <div class="col text-right">
-         <a href="{% url 'home' %}" class="btn btn-review-page">
-         <span class="text-uppercase">Home</span>
-         </a>
-      </div>
-      <div class="col text-left">
-         <a href="{% url 'products' %}" class="btn btn-review-page">
-         <span class="text-uppercase">Shop</span>
+
+   <!--Add review button-->
+   <div class="row">
+      <div class=" col text-center mt-3 mb-3 btn-add-review">
+         <a href="{% url 'add_review' %}" class="add-review-url">
+            <span class="text-uppercase">Add Your Own Review</span>
          </a>
       </div>
    </div>
+   <!-- /. Add review button-->
+
+   <!--Redirection buttons -->
+      <!-- <div class="row ">
+         <div class="col text-right">
+            <a href="{% url 'home' %}" class="btn btn-review-page">
+            <span class="text-uppercase">Home</span>
+            </a>
+         </div>
+         <div class="col text-left">
+            <a href="{% url 'products' %}" class="btn btn-review-page">
+            <span class="text-uppercase">Shop</span>
+            </a>
+         </div>
+      </div> -->
+   <!--Redirection buttons -->
 </div> 
 
-
-<!-- /. Reviews -->
+<!-- /. Review page -->
 
 
 {% endblock %}

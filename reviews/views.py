@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
 from .models import Review
-#from .forms import ReviewForm
+from .forms import ReviewForm
 
 
 def reviews(request):

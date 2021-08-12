@@ -233,16 +233,20 @@ html {
 }
 
 .social-text {
-    color: #dd26a0;
+    color: black;
+    /*color: #dd26a0bf;*/
+    /*color: #dd26a0;*/
     padding-bottom: .3em;
 }
 
 .footer-social-icon {
-    color: #dd26a0;
+    color: #dd26a0bf;
+    /*color: #dd26a0;*/
 }
 
 .footer-cr {
-    background-color: #dd26a0;
+    background-color: #dd26a0bf;
+    /*background-color: #dd26a0;*/
     /*background-color: #aad3ffbf;*/
     /* background-color: #eff2f8; */
     padding-top: 3em;
@@ -254,7 +258,8 @@ html {
 }
 
 .footer-cr-text2 {
-    color:#dd26a0;
+    color: #dd26a0bf;
+    /*color:#dd26a0;*/
     /*color: #03698c;*/
 }
 
@@ -270,11 +275,14 @@ html {
 }
 
 .footer-cr-icon2 {
-    color:#dd26a0;
+    color: #dd26a0bf;
+    /*color:#dd26a0;*/
 }
 
 .login {
     background-color: white;
+    border-radius: 1.5em;
+    color: black;
     padding: 1em;
 }
 
@@ -514,6 +522,34 @@ input[name='q']::placeholder {
     /*color: #dd26a0;*/
 }
 
+.btn-add-review {
+    /*border-radius: 2em;*/
+    color: #f8f9fa;
+    /*background-color: #2c65b317;*/
+    /*background-color: #2c65b38a;*/
+    /*background-color: #2c65b3;*/
+    letter-spacing: .1em;
+    font-size: x-large;
+    font-weight:600;
+    margin: .5em;
+    padding: 3em;
+}
+
+.add-review-url {
+    border-radius: 1.5em;
+    background-color: #dd26a0bf;
+    /*background-color: #dd26a0;*/
+    color: white;
+    /*background-color: white;
+    color: #dd26a0;*/
+    letter-spacing: .1em;
+    font-size: large;
+    margin: .5em;
+    padding: 2em;
+    
+}
+
+
 
 .btn-review-page {
     /*border-radius: 2em;*/
@@ -524,6 +560,8 @@ input[name='q']::placeholder {
     margin: .5em;
     padding: .5em;
 }
+
+
 
 
 /* ------------------------------- bootstrap toasts ---------------------------------------- */
