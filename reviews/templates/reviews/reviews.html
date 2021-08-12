@@ -37,7 +37,7 @@
                <p class="review-text font-italic font-bold">By: {{ review.review_by }}</p>
                {% if request.user.is_superuser %}
                <small class="review-button ml-1">
-               <a class="edit-review" href="">Edit Review</a> | 
+               <a class="edit-review" href="{% url 'edit_review' review.id %}">Edit Review</a> | 
                </small>
                <small class="review-button">
                <a class= "delete-review" href="">Delete Review</a> 
