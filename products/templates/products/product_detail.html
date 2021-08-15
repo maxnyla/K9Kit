@@ -13,9 +13,10 @@
 	<div class="container-fluid ">
 		<div class="row">
                 <div class="col-12 col-md-6 product-detail-info">
-                    <div class="product-detail-container mb-5 ml-5 mt-5">
+                    <div class="product-detail-container mb-5 ml-5 ">
                         <h2 class="mb-0 card-detail-text">{{ product.name }}</h2>
                         <p class="lead mb-0 text-left font-weight-bold product-price">£{{ product.price }}</p>
+<hr>
                         {% if product.category %}
                         <p class="small mt-1 mb-0">
                             <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -29,20 +30,23 @@
                             <small class="prod-rating">No Rating</small>
                         {% endif %}
                         {% if request.user.is_superuser %}
-                            <small class="ml-3">
-                              <a class="edit-product-button font-weight-bold" href="{% url 'edit_product' product.id %}">Edit</a> | 
-                              <a class="text-danger font-weight-bold" href="{% url 'delete_product' product.id %}">Delete</a>
+                            <small class="ml-5">
+                              <a class="edit-review font-weight-bold" href="{% url 'edit_product' product.id %}">Edit</a> | 
+                              <a class="delete-review font-weight-bold" href="{% url 'delete_product' product.id %}">Delete</a>
                             </small>
                         {% endif %}
-                        <p class="mt-3 card-detail-body-text">{{ product.description }}</p>
-                        <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
+
+                        <!-- <p class="mt-3 card-detail-body-text">{{ product.description }}</p> -->
+<br> 
+
+                        <form class="form mt-3" action="{% url 'add_to_bag' product.id %}" method="POST">
                           {% csrf_token %}
                           <div class="form-row">
                                 {% with product.has_sizes as s %}
                                 {% if s %}
-                                    <div class="col-12">
+                                    <div class="col-8 mt-3">
                                         <p><strong>Size:</strong></p>
-                                        <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                        <select class="form-control rounded-0 w-50 ml-5" name="product_size" id='id_product_size'>
                                             <option value="xs">XS</option>
                                             <option value="s">S</option>
                                             <option value="m" selected>M</option>
@@ -52,7 +56,7 @@
                                     </div>
                                 {% endif %}
 
-                              <div class="col-12">
+                              <div class="col-12 mt-3">
                                   <p class="mt-3"><strong>Quantity:</strong></p>
                                   <div class="form-group w-50">
                                       <div class="input-group">
@@ -82,9 +86,9 @@
   
                               <div class="col{% if s %}-12 mt-2{% endif %}">
                                   <a href="{% url 'products' %}" class="btn btn-back-shop rounded-0 mt-5">
-                                      <span class="icon">
+                                      <!-- <span class="icon">
                                           <i class="fas fa-chevron-left shop-button-icon"></i>
-                                      </span>
+                                      </span> -->
                                       <span class="text-uppercase">Keep Shopping</span>
                                   </a>
                                   <input type="submit" class="btn btn-add-bag rounded-0 text-uppercase text-bold mt-5" value="Add to Bag">
@@ -116,22 +120,25 @@
         <div class="row justify-content-center align-items-center mb-5 mt-2">
             <div class="col-12 col-md-6">
                 <div id="accordion product-detail-accord">
-                    <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+                    <div class="card mb-5 mt-5">
+                      <div class="card-header card-detail-body-text" id="headingOne">
+                        <h5 class="mb-0 ">
+                            
                             Description
-                          </button>
+                        
                         </h5>
                       </div>
                   
                       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        <div class="card-body card-detail-body-text">
+                          {{ product.description }}
                         </div>
                       </div>
+
                     </div>
-                    <div class="card">
+
+                    <!-- <div class="card">
                       <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -158,13 +165,41 @@
                           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                         </div>
                       </div>
-                    </div>
+                    </div> -->
+
                   </div>
             </div>
         </div>
 
     
-		<div class="div-parallax d-flex justify-content-center align-items-center w-100 vh-80 parallax" id="product-detail-block-two">
+
+        <div class="div-parallax d-flex justify-content-center align-items-center w-100 parallax" id="block-four">
+          <div class="row justify-content-center mb-5 mt-5">
+            <div class="col-8 block-two-intro">
+              <h4 class="m-5 block-two-h4"> Are you feeling in need of fresh inspiration? Check our  newsletters
+                for the best ideas!
+              </h4>
+                <div class="row justify-content-center align-items-center block-two-inside mb-5">
+                  <div class="col-10 text-center">
+                    <h3 class="block-two-text"> 
+                      <a href="{% url 'newsletters' %}" class="reviews-text"> <i class="fas fa-dog"></i> Newsletters
+                      </a>
+                      
+                    </h3>
+                    
+                  </div> 
+    
+                  <!-- <div class="col-8 text-center">
+                    <h4>
+                      <a href="{% url 'products' %}" class="shop-now-button btn btn-lg text-uppercase"> <i class="fas fa-dog shop-button-icon"></i>  Shop now   
+                      </a>
+                    </h4>
+                  </div>							 -->
+                </div>
+            </div>					
+          </div>
+        </div>
+		<!-- <div class="div-parallax d-flex justify-content-center align-items-center w-100 vh-80 parallax" id="product-detail-block-two">
 			<div class="row justify-content-center">
 				<div class="col-12 product-detail-block-two-intro">
 					<div class="h4 m-5 block-two-h4"> Need inspiration for more? </div>
@@ -184,7 +219,7 @@
 				</div>
 					
 			</div>
-		</div>
+		</div> -->
 
 {% endblock %}
 

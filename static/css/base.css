@@ -184,7 +184,7 @@ html {
     background-color: ghostwhite;
     border-radius: 3em;
     color: #dd26a0;
-    font-weight:600;
+    /* font-weight:600; */
     padding: 2em;
 }
 
@@ -323,8 +323,8 @@ html {
 }
 
 .product-detail-img {
-    height: 35em;
-    width: 35em;
+    height: 30em;
+    width: 30em;
     /* margin: 2em; */
     padding: 2em;
 }
@@ -353,12 +353,14 @@ html {
 .product-detail-info{
     display: flex;
     justify-content: space-around;
-    margin-top: 6em;
+    margin-top: 1em;
     padding: 3em;
 }
 
 .product-price {
-   color: #2c65b3;
+    color: black;
+   /* color:#dd26a0; */
+   /* color: #2c65b3; */
 }
 
 .prod-category {
@@ -371,7 +373,8 @@ html {
 }
 
 .card-detail-text {
-    color: #2c65b3;
+    color:#dd26a0;
+    /* color: #2c65b3; */
     font-size: largest;
     font-weight: 500;
 }
