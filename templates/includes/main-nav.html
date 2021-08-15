@@ -61,14 +61,18 @@
             </div>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white" href="{% url 'reviews' %}" id="reviews-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="{% url 'newsletters' %}" id="reviews-link">
+                News
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="{% url 'reviews' %}" id="reviews-link">
                 Reviews
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="reviews-link">
-                <a href="{% url 'reviews' %}?category=reviews" class="dropdown-item">See Reviews</a>
-            </div>
         </li>
+
 
          <!--<li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-white" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
