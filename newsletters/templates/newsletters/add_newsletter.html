@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <hr>
+                <h2 class="logo-font mb-4 review-title">Newsletters!</h2>
+                <h5 class="text-muted ">Add Newsletter</h5>
+                <hr>
+            </div>
+        </div>
+        <!-- form for owners to add a newsletter-->
+        <div class="row pb-5">
+            <div class="col-12 col-md-6">
+                <form method="POST" action="{% url 'add_newsletter' %}" class="form mb-2"
+                    enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div class="text-right">
+                        <a href="{% url 'newsletters' %}" class="btn">Cancel</a>
+                        <button class="btn" type="submit">Add Newsletter</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

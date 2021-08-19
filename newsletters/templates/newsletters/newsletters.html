@@ -19,63 +19,67 @@
          <h2 class="review-title mb-4">Newsletters</h2>
          <h5 class="review-subtitle">This is where you can keep up with all our news and what's coming next!</h5>
          <hr>
+         <!-- <img class="w-100 h-60 news-image"  src="{{ MEDIA_URL }}y-news.jpg" class="img-fluid" alt="Responsive image"> -->
+      </div>
+   </div>
+</div>
+
+<!-- newsletter page  -->
+<div class="container review-container">
+   <div class="row">
+      {% for newsletter in newsletters %}
+         <div class="col-12">
+            <div class="card review-card mb-5 mt-5">
+               <div class="card-body text-center">
+                  <p class="font-weight-bold text-uppercase review-title"><i class="fas fa-paw review-icon"></i> {{ newsletter.newsletter_title }} <i class="fas fa-paw review-icon"></i> </p>
+                  <p class= "review-text">{{ newsletter.newsletter_body }}</p>
+                  <p class="review-text">{{ newsletter.newsletter_date }}</p>
+                  <p class="review-text font-italic font-bold">By: {{ newsletter.newsletter_by }}</p>
+                  {% for newsletter in newsletters %}
+                     {% if request.user.is_superuser %}
+                     <small class="review-button ml-1">
+                     <a class="edit-newsletter" href="">Edit Newsletter</a> | 
+                     </small>
+                     <small class="review-button">
+                     <a class= "delete-newsletter" href="">Delete Newsletter</a> 
+                     </small>
+                     {% endif %}
+                  {% endfor %} 
+               </div>
+            </div>
+         </div>
+      {% endfor %} 
+   </div>
+
+   <!--Add newsletter button-->
+   <div class="row">
+      {% for newsletter in newsletters %}
+        <div class=" col text-center mt-3 mb-3 btn-add-review">
+           {% if request.user.is_superuser %} 
+            <a href="{% url 'add_newsletter' %}" class="add-review-url">
+                <span class="text-uppercase">Add Newsletter </span>
+            </a>
+            {% endif %}
+      </div>
+      {% endfor %}
+   </div>
+
+   <!-- /. Add newsletter button-->
+
+</div>
+
+<div class="container ">
+   <div class="row">
+      <div class="col-12 text-center mt-3">
+         <!-- <hr> -->
+         <!-- <h2 class="review-title mb-4">Newsletters</h2>
+         <h5 class="review-subtitle">This is where you can keep up with all our news and what's coming next!</h5> -->
+         
          <img class="w-100 h-60 news-image"  src="{{ MEDIA_URL }}y-news.jpg" class="img-fluid" alt="Responsive image">
       </div>
    </div>
 </div>
 
-<!-- Review page  -->
-<div class="container review-container">
-   <div class="row">
-      {% for review in reviews %}
-      <div class="col-12">
-         <div class="card review-card mb-5 mt-5">
-            <div class="card-body text-center">
-               <p class="font-weight-bold text-uppercase review-title"><i class="fas fa-paw review-icon"></i> {{ review.review_title }} <i class="fas fa-paw review-icon"></i> </p>
-               <p class= "review-text">{{ review.review_body }}</p>
-               <p class="review-text">{{ review.review_date }}</p>
-               <p class="review-text font-italic font-bold">By: {{ review.review_by }}</p>
-               {% if request.user.is_superuser %}
-               <small class="review-button ml-1">
-               <a class="edit-newsletter" href="">Edit Newsletter</a> | 
-               </small>
-               <small class="review-button">
-               <a class= "delete-newsletter" href="">Delete Newsletter</a> 
-               </small>
-               {% endif %}
-            </div>
-         </div>
-      </div>
-      {% endfor %} 
-   </div>
-
-   <!--Add review button-->
-   <div class="row">
-      <div class=" col text-center mt-3 mb-3 btn-add-review">
-         <a href="{% url 'add_review' %}" class="add-review-url">
-            <span class="text-uppercase">Add Newsletter </span>
-         </a>
-      </div>
-   </div>
-   <!-- /. Add review button-->
-
-   <!--Redirection buttons -->
-      <!-- <div class="row ">
-         <div class="col text-right">
-            <a href="{% url 'home' %}" class="btn btn-review-page">
-            <span class="text-uppercase">Home</span>
-            </a>
-         </div>
-         <div class="col text-left">
-            <a href="{% url 'products' %}" class="btn btn-review-page">
-            <span class="text-uppercase">Shop</span>
-            </a>
-         </div>
-      </div> -->
-   <!--Redirection buttons -->
-</div> 
-
 <!-- /. Newsletter page -->
-
 
 {% endblock %}

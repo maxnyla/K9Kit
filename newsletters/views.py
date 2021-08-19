@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
 from .models import Newsletter
-#from .forms import NewsletterForm
+from .forms import NewsletterForm
 
 
 def newsletters(request):
@@ -24,6 +24,11 @@ def add_newsletter(request):
     """
     A view for logged in site owners to add a newsletter
     """
+    if not request.user.is_superuser:
+        messages.error(
+            request, 'Sorry, only K9Kit admin has permission to do this.')
+        return redirect(reverse('newsletter'))
+
     if request.method == 'POST':
         form = NewsletterForm(request.POST)
         if form.is_valid():
@@ -50,6 +55,12 @@ def edit_newsletter(request, newsletter_id):
     """
     A view for logged in site owners to edit their newsletter
     """
+    if not request.user.is_superuser:
+        messages.error(
+            request, 'Sorry, only K9Kit admin has permission to do this.')
+
+        return redirect(reverse('newsletter'))
+
     newsletter = get_object_or_404(Newsletter, pk=newsletter_id)
     if request.method == 'POST':
         form = NewsletterForm(request.POST, instance=newsletter)
@@ -78,6 +89,12 @@ def delete_newsletter(request, newsletter_id):
     """
     A view for logged in site owners to delete their newsletter
     """
+    if not request.user.is_superuser:
+        messages.error(
+            request, 'Sorry, only K9Kit admin has permission to do this.')
+
+        return redirect(reverse('newsletter'))
+    
     newsletter = get_object_or_404(Newsletter, pk=newsletter_id)
     newsletter.delete()
     messages.success(request, 'Your newsletter was deleted!')
