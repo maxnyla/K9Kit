@@ -11,7 +11,7 @@ def all_reviews(request):
 
     reviews = Review.objects.all()
 
-    template = 'reviews/all_reviews.html'
+    template = 'reviews/reviews.html'
     context = {
         'reviews': reviews,
     }
@@ -30,7 +30,7 @@ def add_review(request):
             form.save()
             messages.success(request, 'Thanks! Your review was added')
 
-            return redirect(reverse('all_reviews',))
+            return redirect(reverse('reviews',))
         else:
             messages.error(request, 'Failed to add review.\
                                     Please ensure form is valid and try again.')
@@ -58,7 +58,7 @@ def edit_review(request, review_id):
             form.save()
             messages.success(request, 'Your review was successfully edited.')
 
-            return redirect(reverse('all_reviews'))
+            return redirect(reverse('reviews'))
         else:
             messages.error(request, 'Failed to edit review. \
                     Please check the form is valid and try again.')
@@ -83,4 +83,4 @@ def delete_review(request, review_id):
     review.delete()
     messages.success(request, 'Your review was deleted!')
 
-    return redirect(reverse('all_reviews'))
+    return redirect(reverse('reviews'))
