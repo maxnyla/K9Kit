@@ -7,16 +7,16 @@ from .forms import ReviewForm
 
 
 def all_reviews(request):
-    """
-    A view showing all reviews
-    """
+    """ A view showing all reviews """
+
     reviews = Review.objects.all()
 
+    template = 'reviews/all_reviews.html'
     context = {
         'reviews': reviews,
     }
 
-    return render(request, 'reviews/reviews.html', context)
+    return render(request, template, context)
 
 
 @login_required
@@ -30,7 +30,7 @@ def add_review(request):
             form.save()
             messages.success(request, 'Thanks! Your review was added')
 
-            return redirect(reverse('reviews',))
+            return redirect(reverse('all_reviews',))
         else:
             messages.error(request, 'Failed to add review.\
                                     Please ensure form is valid and try again.')
@@ -58,7 +58,7 @@ def edit_review(request, review_id):
             form.save()
             messages.success(request, 'Your review was successfully edited.')
 
-            return redirect(reverse('reviews'))
+            return redirect(reverse('all_reviews'))
         else:
             messages.error(request, 'Failed to edit review. \
                     Please check the form is valid and try again.')
@@ -83,4 +83,4 @@ def delete_review(request, review_id):
     review.delete()
     messages.success(request, 'Your review was deleted!')
 
-    return redirect(reverse('reviews'))
+    return redirect(reverse('all_reviews'))
