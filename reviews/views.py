@@ -6,7 +6,7 @@ from .models import Review
 from .forms import ReviewForm
 
 
-def all_reviews(request):
+def reviews(request):
     """ A view showing all reviews """
 
     reviews = Review.objects.all()
@@ -14,6 +14,19 @@ def all_reviews(request):
     template = 'reviews/reviews.html'
     context = {
         'reviews': reviews,
+    }
+
+    return render(request, template, context)
+
+
+def view_reviews(request):
+    """ A view displaying all reviews available """
+
+    reviews = Review.objects.all()
+
+    template = 'reviews/view_reviews.html'
+    context = {
+        'view_reviews' : view_reviews,
     }
 
     return render(request, template, context)

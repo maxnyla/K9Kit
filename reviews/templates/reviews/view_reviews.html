@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+	<div class="container header-container">
+		<div class="row">
+			<div class="col"></div>
+		</div>
+    </div> 
+{% endblock %}
+
+{% block content %}
+<!-- Review page  -->
+<div class="overlay"></div>
+<div class="container ">
+   <div class="row">
+      <div class="col-12 text-center mt-3">
+         <br>
+         <h2 class="review-title mb-4"> <b>Reviews</b></h2>
+         <h5 class="review-subtitle">What are our customers saying about K9-Kit?</h5>
+         <br>
+         <!-- <hr> -->
+         <img class="w-100 h-60 reviews-image mb-5"  src="{{ MEDIA_URL }}z-reviews.jpg" class="img-fluid" alt="Responsive image">
+      </div>
+   </div>
+</div>
+
+
+<div class="container review-container">
+   <div class="row">
+      {% for review in reviews %}
+      <div class="col-12">
+         <div class="card review-card mb-5 mt-5">
+            <div class="card-body text-center">
+               <p class="font-weight-bold text-uppercase review-title"><i class="fas fa-paw review-icon"></i> {{ review.review_title }} <i class="fas fa-paw review-icon"></i> </p>
+               <p class= "review-text">{{ review.review_body }}</p>
+               <p class="review-text">{{ review.review_date }}</p>
+               <p class="review-text font-italic font-bold mt-5">By: {{ review.review_by }}</p>
+               {% if request.user.is_superuser %}
+                  <small class="review-button ml-1">
+                     <a class="edit-review" href="{% url 'edit_review' review.id %}">Edit Review</a> | 
+                  </small>
+                  <small class="review-button">
+                     <a class= "delete-review" href="{% url 'delete_review' review.id %}">Delete Review</a> 
+                  </small>
+               {% endif %}
+            </div>
+         </div>
+      </div>
+      {% endfor %} 
+   </div>
+
+   <!--Add review button-->
+   <div class="row">
+      <div class=" col text-center mt-3 mb-3 btn-add-review">
+         <a href="{% url 'add_review' %}" class="add-review-url">
+            <span class="text-uppercase">Add Your Own Review</span>
+         </a>
+      </div>
+   </div>
+   <!-- /. Add review button-->
+</div> 
+<!-- /. Review page -->
+{% endblock %}
