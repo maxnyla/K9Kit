@@ -12,26 +12,29 @@
 {% block content %}
 
 <div class="overlay"></div>
-<div class="container ">
+<div class="container newsletter-heading-container">
    <div class="row">
       <div class="col-12 text-center mt-3">
-         <hr>
-         <h2 class="review-title mb-4">Newsletters</h2>
+         <!-- <hr> -->
+         <br>
+         <h2 class="review-title mb-4"> <b>Newsletters</b></h2>
+         <br>
          <h5 class="review-subtitle">This is where you can keep up with all our news and what's coming next!</h5>
-         <hr>
+         <!-- <hr> -->
          <!-- <img class="w-100 h-60 news-image"  src="{{ MEDIA_URL }}y-news.jpg" class="img-fluid" alt="Responsive image"> -->
+         <br>
       </div>
    </div>
 </div>
 
 <!-- newsletter page  -->
-<div class="container review-container">
-   <div class="row">
+<div class="container newsletter-container review-container">
+   <div class="row newsletter-row">
       {% for newsletter in newsletters %}
          <div class="col-12">
             <div class="card review-card mb-5 mt-5">
                <div class="card-body text-center">
-                  <p class="font-weight-bold text-uppercase review-title"><i class="fas fa-paw review-icon"></i> {{ newsletter.newsletter_title }} <i class="fas fa-paw review-icon"></i> </p>
+                  <p class="font-weight-bold text-uppercase review-title"><i class="fas fa-dog review-icon"></i> {{ newsletter.newsletter_title }}  </p>
                   <p class= "review-text">{{ newsletter.newsletter_body }}</p>
                   <p class="review-text">{{ newsletter.newsletter_date }}</p>
                   <p class="review-text font-italic font-bold">By: {{ newsletter.newsletter_by }}</p>
@@ -52,7 +55,7 @@
    </div>
 
    <!--Add newsletter button-->
-   <div class="row">
+   <div class="row newsletter-add">
       {% for newsletter in newsletters %}
         <div class=" col text-center mt-3 mb-3 btn-add-review">
            {% if request.user.is_superuser %} 
@@ -68,7 +71,7 @@
 
 </div>
 
-<div class="container ">
+<div class="container newsletter-img-container">
    <div class="row">
       <div class="col-12 text-center mt-3">
          <!-- <hr> -->

@@ -8,7 +8,6 @@ class ReviewForm(forms.ModelForm):
         model = Review
         exclude = (
             'user', 
-            'review_date'
         )
 
         fields = ['review_title', 'review_body', 'review_by']

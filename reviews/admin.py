@@ -8,7 +8,6 @@ class ReviewAdmin(admin.ModelAdmin):
         'review_title',
         'review_body',
         'review_by',
-        'review_date'
     )
 
     ordering = ('review_title',)

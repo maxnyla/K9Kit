@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 from .models import Review
 from .forms import ReviewForm
@@ -29,6 +29,7 @@ def add_review(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Thanks! Your review was added')
+            
             return redirect(reverse('reviews',))
         else:
             messages.error(request, 'Failed to add review.\
