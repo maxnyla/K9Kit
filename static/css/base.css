@@ -478,13 +478,17 @@ input[name='q']::placeholder {
 
 .review-card {
     border-color: #2c65b3;
+    padding-bottom: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 4em;
     /*border-color: #2d81aa;*/
     /*border-color: #dd26a0;*/
 }
 
 .review-title {
-    color: #dd26a0;
-    /*color: #2c65b3;*/
+    /* color: #dd26a0; */
+    color: #2c65b3;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
@@ -507,7 +511,6 @@ input[name='q']::placeholder {
     /*color: #2c65b3;*/
 }
 
-
 .review-button {
     /*background: #2c65b3;*/
     /*border-radius: 1em;*/
@@ -521,11 +524,9 @@ input[name='q']::placeholder {
     color: #00ffffe6;
 }
 
-
 .edit-review {
     color: #dd26a0;
 }
-
 
 .delete-review {
     color: #9eabd2;
@@ -559,8 +560,6 @@ input[name='q']::placeholder {
     
 }
 
-
-
 .btn-review-page {
     /*border-radius: 2em;*/
     color: #f8f9fa;
@@ -576,10 +575,12 @@ input[name='q']::placeholder {
 }
 
 .newsletter-container {
-    background-color: #6495ed30;
+    background-color: #dd26a012;
+    /* background-color:#dd26a038; */
+    /* background-color: #6495ed30; */
 }
 
-.newsletter-heading-container {
+.newsletter-heading-cont {
     /* background-color: #6495ed30;*/
 } 
 
@@ -592,13 +593,52 @@ input[name='q']::placeholder {
 
 .newsletter-img-container {
     background-color: #6495ed30;
-    padding-left: 9em;
-    padding-right: 9em;
-    padding-bottom: 7em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    padding-bottom: 3em; 
+    /* padding-top: 1em; */
+}
+
+.newsletter-title {
+    color:#dd26a0;
+    font-family: 'Rubik', sans-serif;
+    /* font-size: larger; */
+    font-weight: 500;
+    margin-bottom: 3em;
+    text-transform: uppercase;
+}
+
+.newsletter-subtitle {
+    color:#dd26a0;
+    font-family: 'Rubik', sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    margin-bottom: 3em;
+    text-transform: uppercase;
+}
+
+.newsletter-card {
+    padding-bottom: 5em;
+    padding-top: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border-color: black;
+
+    /* border-color: #2c65b3; */
+    /*border-color: #2d81aa;*/
+    /*border-color: #dd26a0;*/
 }
 
 
+.newsletter-text {
+    /* color:#dd26a0; */
+    color: black;
+    /* color: #2c65b3; */
+}
 
+.news-image {
+    border-style: outset;
+}
 
 
 /* ------------------------------- bootstrap toasts ---------------------------------------- */

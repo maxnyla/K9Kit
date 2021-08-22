@@ -10,21 +10,22 @@
 {% endblock %}
 
 {% block content %}
-
+<!-- Review page  -->
 <div class="overlay"></div>
 <div class="container ">
    <div class="row">
       <div class="col-12 text-center mt-3">
-         <hr>
-         <h2 class="review-title mb-4">Reviews</h2>
+         <br>
+         <h2 class="review-title mb-4"> <b>Reviews</b></h2>
          <h5 class="review-subtitle">What are our customers saying about K9-Kit?</h5>
-         <hr>
+         <br>
+         <!-- <hr> -->
          <img class="w-100 h-60 reviews-image mb-5"  src="{{ MEDIA_URL }}z-reviews.jpg" class="img-fluid" alt="Responsive image">
       </div>
    </div>
 </div>
 
-<!-- Review page  -->
+
 <div class="container review-container">
    <div class="row">
       {% for review in reviews %}
@@ -34,14 +35,14 @@
                <p class="font-weight-bold text-uppercase review-title"><i class="fas fa-paw review-icon"></i> {{ review.review_title }} <i class="fas fa-paw review-icon"></i> </p>
                <p class= "review-text">{{ review.review_body }}</p>
                <p class="review-text">{{ review.review_date }}</p>
-               <p class="review-text font-italic font-bold">By: {{ review.review_by }}</p>
+               <p class="review-text font-italic font-bold mt-5">By: {{ review.review_by }}</p>
                {% if request.user.is_superuser %}
-               <small class="review-button ml-1">
-               <a class="edit-review" href="{% url 'edit_review' review.id %}">Edit Review</a> | 
-               </small>
-               <small class="review-button">
-               <a class= "delete-review" href="{% url 'delete_review' review.id %}">Delete Review</a> 
-               </small>
+                  <small class="review-button ml-1">
+                     <a class="edit-review" href="{% url 'edit_review' review.id %}">Edit Review</a> | 
+                  </small>
+                  <small class="review-button">
+                     <a class= "delete-review" href="{% url 'delete_review' review.id %}">Delete Review</a> 
+                  </small>
                {% endif %}
             </div>
          </div>
@@ -58,24 +59,6 @@
       </div>
    </div>
    <!-- /. Add review button-->
-
-   <!--Redirection buttons -->
-      <!-- <div class="row ">
-         <div class="col text-right">
-            <a href="{% url 'home' %}" class="btn btn-review-page">
-            <span class="text-uppercase">Home</span>
-            </a>
-         </div>
-         <div class="col text-left">
-            <a href="{% url 'products' %}" class="btn btn-review-page">
-            <span class="text-uppercase">Shop</span>
-            </a>
-         </div>
-      </div> -->
-   <!--Redirection buttons -->
 </div> 
-
 <!-- /. Review page -->
-
-
 {% endblock %}

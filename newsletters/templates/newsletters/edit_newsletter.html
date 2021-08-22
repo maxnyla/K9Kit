@@ -17,20 +17,20 @@
             <div class="col-12 col-md-6">
                 <hr>
                 <h2 class="logo-font mb-4 review-title">Newsletters!</h2>
-                <h5 class="text-muted ">Add Newsletter</h5>
+                <h5 class="text-muted ">Edit Newsletter</h5>
                 <hr>
             </div>
         </div>
-        <!-- form for K9-Kit admins to add a newsletter-->
+        <!-- form for users to edit a review-->
         <div class="row pb-5">
             <div class="col-12 col-md-6">
-                <form method="POST" action="{% url 'add_newsletter' %}" class="form mb-2"
+                <form method="POST" action="{% url 'edit_newsletter' newsletter.id %}" class="form mb-2"
                     enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form | crispy }}
                     <div class="text-right">
                         <a href="{% url 'newsletters' %}" class="btn">Cancel</a>
-                        <button class="btn" type="submit">Add Newsletter</button>
+                        <button class="btn" type="submit">Edit Newsletter</button>
                     </div>
                 </form>
             </div>
