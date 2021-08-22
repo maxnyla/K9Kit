@@ -6,7 +6,7 @@ from .models import Review
 from .forms import ReviewForm
 
 
-def reviews(request):
+def all_reviews(request):
     """
     A view showing all reviews
     """
@@ -29,7 +29,7 @@ def add_review(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Thanks! Your review was added')
-            
+
             return redirect(reverse('reviews',))
         else:
             messages.error(request, 'Failed to add review.\
