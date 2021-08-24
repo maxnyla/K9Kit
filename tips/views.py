@@ -3,7 +3,6 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
 from .models import Tip
-#from .forms import NewsletterForm
 
 
 def tips(request):
@@ -15,3 +14,16 @@ def tips(request):
     }
 
     return render(request, 'tips/tips.html', context)
+
+
+def view_tips(request):
+    """ A view displaying all tips available """
+    
+    tips = Tip.objects.all()
+
+    template = 'tips/view_tips.html'
+    context = {
+        'view_tips' : view_tips,
+    }
+
+    return render(request, template, context)
