@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <hr>
+                <h2 class="logo-font mb-4 review-title">Tips!</h2>
+                <h5 class="text-muted ">Edit Tips</h5>
+                <hr>
+            </div>
+        </div>
+        <!-- form for users to edit a review-->
+        <div class="row pb-5">
+            <div class="col-12 col-md-6">
+                <form method="POST" action="{% url 'edit_tip' tip.id %}" class="form mb-2"
+                    enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div class="text-right">
+                        <a href="{% url 'view_tips' %}" class="btn">Cancel</a>
+                        <button class="btn" type="submit">Edit Tip</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -7,9 +7,8 @@ class TipAdmin(admin.ModelAdmin):
         'tip_title',
         'tip_body',
         'tip_by',
-        'tip_date'
     )
 
-    ordering = ('tip_date',)
+    ordering = ('tip_title',)
 
 admin.site.register(Tip, TipAdmin)
