@@ -5,19 +5,28 @@
 {% block head_title %}{% trans "LOG OUT" %}{% endblock %}
 
 {% block inner_content %}
-<hr>
-<h2 class="logo-font mb-4">{% trans "LOG OUT" %}</h2>
-<hr>
-<p>{% trans 'Are you sure you want to log out?' %}</p>
+<div class="container logout-page mt-5 ml-5">
+  <div class="row">
+      <div class="col-12">
+        
+        
+        <br>
+        <h1 class="logo-font mb-5 mt-5 ml-5 logout-title">{% trans "LOG OUT" %}</h1>
+       <hr>
+        
 
-<form method="post" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <a class="btn btn-outline-black rounded-0" href="{% url 'home' %}">Cancel</a>
-  <button type="submit">{% trans 'LOG OUT' %}</button>
-</form>
+        <h3 class="logout-text mb-5 ml-5 mt-5">{% trans 'Are you sure you want to log out?' %}</h3>
 
+        <form class="mb-5 mt-5" method="post" action="{% url 'account_logout' %}">
+          {% csrf_token %}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+          {% endif %}
+          <a class="btn btn-outline-black rounded-0 mb-5 mt-5 ml-5" href="{% url 'home' %}">Cancel</a>
+          <button type="submit" class="mb-5 mt-5 ml-5">{% trans 'LOG OUT' %}</button>
+        </form>
+    </div>
+  </div>
+</div>
 
 {% endblock %}

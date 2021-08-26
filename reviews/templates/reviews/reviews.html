@@ -36,7 +36,7 @@
                <p class= "review-text">{{ review.review_body }}</p>
                <p class="review-text">{{ review.review_date }}</p>
                <p class="review-text font-italic font-bold mt-5">By: {{ review.review_by }}</p>
-               {% if request.user.is_superuser %}
+               {% if request.user.is_authenticated %}               
                   <small class="review-button ml-1">
                      <a class="edit-review" href="{% url 'edit_review' review.id %}">Edit Review</a> | 
                   </small>

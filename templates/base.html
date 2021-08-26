@@ -187,11 +187,19 @@
                         </div>
 
                         <div class="col">
+                            {% if request.user.is_authenticated %} 
+                            <a href="{% url 'account_logout' %}" class="nav-link footer-cr-text2 mb-5">
+                                <div class="login">
+                                    <h5> <i class="fas fa-sign-in-alt footer-cr-icon2"> </i> LOG OUT </h5>
+                                </div>
+                            </a>
+                            {% else %}
                             <a href="{% url 'account_signup' %}" class="nav-link footer-cr-text2 mb-5">
                                 <div class="login">
                                     <h5> <i class="fas fa-sign-in-alt footer-cr-icon2"> </i> LOG IN </h5>
                                 </div>
                             </a>
+                            {% endif %}
                         </div>
 
                         <div class="col">

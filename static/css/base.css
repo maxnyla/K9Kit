@@ -12,7 +12,8 @@ html {
 }
 
 .top-banner {
-    background-color:#dd26a0;
+    background-color: #dd26a073;
+    /* background-color:#dd26a0; */
     /* background-color: #aad3ff; */
     /* background-color: #4c7db3; */
     /* margin-left: 1px;
@@ -241,7 +242,8 @@ html {
 }
 
 .footer-cr {
-    background-color: #dd26a0bf;
+    background-color: #dd26a073;
+    /* background-color: #dd26a0bf; */
     /*background-color: #dd26a0;*/
     /*background-color: #aad3ffbf;*/
     /* background-color: #eff2f8; */
@@ -639,6 +641,21 @@ input[name='q']::placeholder {
 .news-image {
     border-style: outset;
 }
+
+
+.logout-page {
+    background-color: whitesmoke;
+}
+
+.logout-text {
+    color: #dd26a0bd;
+}
+
+.login-title,
+.logout-title {
+    color: #dd26a0bd;
+}
+
 
 
 /* ------------------------------- bootstrap toasts ---------------------------------------- */
