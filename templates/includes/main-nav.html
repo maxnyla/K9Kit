@@ -61,10 +61,20 @@
             </div>
         </li>
 
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-white mr-5" href="{% url 'newsletters' %}" id="news-link">
                 News
             </a>
+        </li> -->
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="reviews-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                News
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
+                <a href="{% url 'newsletters' %}" class="dropdown-item">View Newsletters</a>
+                <a href="{% url 'tips' %}" class="dropdown-item">View Tips</a>
+            </div>
         </li>
 
         <!-- <li class="nav-item">
