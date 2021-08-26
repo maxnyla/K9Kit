@@ -23,19 +23,25 @@
          <h5 class="review-subtitle">This is where you can get lots of great info and tips for a fun life with your fluffs!</h5>
          <br>
       </div>
+   </div>
+
+</div>
+
+<div class="container">
+
+   <div class="div d-flex justify-content-center align-items-center w-100 h-30 tip-container">
+
+      <div class="row">
+         <div class="col-12 text-center mt-5">
+            <img class="w-100 h-30 tip-image"  src="{{ MEDIA_URL }}tips-dreamy.jpg" class="img-fluid" alt="Responsive image">
+         </div>
+      </div>
 
    </div>
 
-
-      <!-- <div class="row">
-         <div class="col-12 text-center mt-5">
-            <img class="w-100 h-40 tip-image1"  src="{{ MEDIA_URL }}tips-twins.jpg" class="img-fluid" alt="Responsive image">
-         </div>
-      </div> -->
-
-
-
 </div>
+<!-- tips page  -->
+
 
 
 <div class="container tip-container">
@@ -43,9 +49,9 @@
       {% for tip in tips %}
          <div class="col-12 text-center">
             <div class="card tip-card mb-5 mt-5">
-               <div class="card-body tip-card-body text-center">
+               <div class="card-body text-center">
                   <!-- <div class="col-12 text-center"> -->
-                  <p class="font-weight-bold text-uppercase newsletter-subtitle"> {{ tip.tip_title }}  </p>
+                  <p class="font-weight-bold text-uppercase newsletter-subtitle"><i class="fas fa-dog review-icon"></i> {{ tip.tip_title }}  </p>
                   <p class= "newsletter-text">{{ tip.tip_body }}</p>
                   <p class="newsletter-text font-italic font-bold">From {{ tip.tip_by }}</p>
                   <!-- </div> -->
@@ -63,29 +69,22 @@
                <br>
 
          </div>
-
       {% endfor %} 
    </div>
    
-   <!-- <div class="row">
-      <div class="col-12 text-center mt-5">
-         <img class="w-100 tip-image"  src="{{ MEDIA_URL }}tips-bones.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-   </div> -->
-
 </div>
 
 <div class="container tip-img-container">
-   <div class="row tip-add">
-      <!-- <div class="col-12 text-center mt-5">
-         <img class="w-100 h-20 tip-image"  src="{{ MEDIA_URL }}tips-bones.jpg" class="img-fluid" alt="Responsive image">
-      </div> -->
+   <div class="row">
+      <div class="col-12 text-center mt-5">
+         <img class="w-100 h-20 tip-image"  src="{{ MEDIA_URL }}bones.jpg" class="img-fluid" alt="Responsive image">
+      </div>
 
       <!--Add tip button-->
       {% if request.user.is_superuser %}
-      <!-- <div class="row tip-add"> -->
+      <div class="row tip-add">
       
-         <div class=" col-12 text-center mt-3 mb-3 btn-add-review">
+         <div class=" col text-center mt-3 mb-3 btn-add-review">
             <a href="" class="add-review-url">
                <span class="text-uppercase">Add Tip</span>
             </a>
@@ -98,7 +97,6 @@
    </div>
 
 </div>
-
 
 
 <!-- /. Tips page -->

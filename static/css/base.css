@@ -656,6 +656,21 @@ input[name='q']::placeholder {
     color: #dd26a0bd;
 }
 
+.tip-card {
+    background: url('/media/tips-bones.jpg') no-repeat center center;
+    /* background: url('/media/homepage-background-cropped.jpg') no-repeat center center fixed; */
+    background-attachment: fixed;
+    background-size: cover; */
+}
+
+.tip-image2 {
+    height: 20em;
+}
+
+.tip-card-body{
+    background-color: #f8f9fae6;
+}
+
 
 
 /* ------------------------------- bootstrap toasts ---------------------------------------- */

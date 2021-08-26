@@ -10,42 +10,28 @@
 {% endblock %}
 
 {% block content %}
+<!-- newsletter page  -->
 <div class="overlay"></div>
-
 <div class="container newsletter-heading-cont">
-
    <div class="row">
-
       <div class="col-12 text-center mt-3">
          <br>
          <h2 class="newsletter-title mb-4"> <b>Tips</b></h2>
          <br>
-         <h5 class="review-subtitle">This is where you can get lots of great info and tips for a fun life with your fluffs!</h5>
+         <h5 class="review-subtitle">This is where you can keep up with all our news and get lots of great info!</h5>
          <br>
       </div>
-
    </div>
-
-
-      <!-- <div class="row">
-         <div class="col-12 text-center mt-5">
-            <img class="w-100 h-40 tip-image1"  src="{{ MEDIA_URL }}tips-twins.jpg" class="img-fluid" alt="Responsive image">
-         </div>
-      </div> -->
-
-
-
 </div>
 
-
-<div class="container tip-container">
-   <div class="row tip-card newsletter-row mb-5 mt-5">
+<div class="container newsletter-container">
+   <div class="row newsletter-card newsletter-row mb-5 mt-5">
       {% for tip in tips %}
          <div class="col-12 text-center">
-            <div class="card tip-card mb-5 mt-5">
-               <div class="card-body tip-card-body text-center">
+            <div class="card newsletter-card mb-5 mt-5">
+               <div class="card-body text-center">
                   <!-- <div class="col-12 text-center"> -->
-                  <p class="font-weight-bold text-uppercase newsletter-subtitle"> {{ tip.tip_title }}  </p>
+                  <p class="font-weight-bold text-uppercase newsletter-subtitle"><i class="fas fa-dog review-icon"></i> {{ tip.tip_title }}  </p>
                   <p class= "newsletter-text">{{ tip.tip_body }}</p>
                   <p class="newsletter-text font-italic font-bold">From {{ tip.tip_by }}</p>
                   <!-- </div> -->
@@ -63,44 +49,35 @@
                <br>
 
          </div>
-
       {% endfor %} 
    </div>
    
-   <!-- <div class="row">
-      <div class="col-12 text-center mt-5">
-         <img class="w-100 tip-image"  src="{{ MEDIA_URL }}tips-bones.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-   </div> -->
-
 </div>
 
-<div class="container tip-img-container">
-   <div class="row tip-add">
-      <!-- <div class="col-12 text-center mt-5">
-         <img class="w-100 h-20 tip-image"  src="{{ MEDIA_URL }}tips-bones.jpg" class="img-fluid" alt="Responsive image">
-      </div> -->
+<div class="container newsletter-img-container">
+   <div class="row">
+      <div class="col-12 text-center mt-5">
+         <img class="w-100 h-60 news-image"  src="{{ MEDIA_URL }}y-news.jpg" class="img-fluid" alt="Responsive image">
+      </div>
+   </div>
+</div>
 
-      <!--Add tip button-->
-      {% if request.user.is_superuser %}
-      <!-- <div class="row tip-add"> -->
-      
-         <div class=" col-12 text-center mt-3 mb-3 btn-add-review">
+   <!--Add newsletter button-->
+
+<!-- <div class="container"> -->
+   {% if request.user.is_superuser %}
+   <div class="row newsletter-add">
+      <!-- {% for newsletter in newsletters %} -->
+         <div class=" col text-center mt-3 mb-3 btn-add-review">
             <a href="" class="add-review-url">
-               <span class="text-uppercase">Add Tip</span>
+                <span class="text-uppercase">Add Tip</span>
             </a>
          </div>
-     
+      <!-- {% endfor %} -->
    </div>
    {% endif %}
-
-   <!-- /. Add tip button-->
-   </div>
-
-</div>
-
-
-
-<!-- /. Tips page -->
+<!-- </div> -->
+   <!-- /. Add newsletter button-->
+<!-- /. Newsletter page -->
 
 {% endblock %}
