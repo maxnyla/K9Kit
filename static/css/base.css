@@ -293,14 +293,17 @@ html {
 }
 
 .product-card {
-    background-color: #b7c8db24;
-    border-color: white;
+    background-color: white;
+    /* background-color: #b7c8db24; */
+    border-color: #2c65b31f;
+    /* border-color: white; */
     /* padding: 1em; */
 
 }
 
 .card-footer {
-    background-color: #b7c8db24;
+    background-color: #b7c8db17;
+    /* background-color: #b7c8db24; */
 }
 
 .card-body-text {
@@ -325,15 +328,19 @@ html {
 }
 
 .product-detail-img {
-    height: 30em;
-    width: 30em;
+    height: 28em;
+    width: 28em;
+    /* height: 30em;
+    width: 30em; */
     /* margin: 2em; */
     padding: 2em;
 }
 
 .product-img {
-    height: 23em;
-    width: 23em;
+    height: 18em;
+    width: 18em;
+    /* height: 23em;
+    width: 23em; */
 }
 
 .bag-img {
