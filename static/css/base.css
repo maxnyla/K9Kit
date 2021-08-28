@@ -11,6 +11,30 @@ body {
 }
 
 
+a:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: >all 0.5s ease-in-out;
+}
+
+i:hover {
+    text-decoration: none;
+    transform: scale(1.5);
+    transition: >all 0.5s ease-in-out;
+}
+
+.footer-social-icon:hover {
+    text-decoration: none;
+    transform: scale(2.5);
+    transition: >all 0.5s ease-in-out;
+}
+
+.social-list-item {
+    font-size: 1.6em;
+}
+
+
+
 
 /* from Bulma */
 .icon { 
@@ -23,11 +47,6 @@ body {
 
 .top-banner {
     background-color: #dd26a073;
-    /* background-color:#dd26a0; */
-    /* background-color: #aad3ff; */
-    /* background-color: #4c7db3; */
-    /* margin-left: 1px;
-    margin-right: 1px; */
 }
 
 .delivery-banner {
@@ -58,6 +77,15 @@ body {
 .navbar-toggler-icon {
     color: white;
 }
+
+
+.nav-link:hover {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+
 
 .shop-now-button {
     background: black;
@@ -169,10 +197,6 @@ body {
     /* height: 80vh; */
 }
 
-#product-detail-block-two {
-    background-color: #b8c6dd38;
-    height: 80vh;
-}
 
 #block-three {
     background: url('/media/home3.jpg') no-repeat center center;
@@ -182,7 +206,7 @@ body {
 
 #block-four {
     background-color: #b8c6dd;
-    /* height: 100vh; */
+    height: 38em;
 }
 
 
@@ -215,7 +239,7 @@ body {
     /*padding: 2em;*/
 }
 
-.block-four-product-detail {
+.product-detail-block-two {
     /* background-color: #b8c6dd; */
     background-color: #b8c6dd38;
     /* background-color: rgb(0 123 255 / 13%); */
@@ -249,8 +273,7 @@ body {
 
 .social-text {
     color: black;
-    /*color: #dd26a0bf;*/
-    /*color: #dd26a0;*/
+    margin-bottom: 1.5em;
     padding-bottom: .3em;
 }
 
@@ -262,7 +285,7 @@ body {
 
 .footer-social-icon {
     color: #dd26a0bf;
-    /*color: #dd26a0;*/
+
 }
 
 .footer-cr {
@@ -458,7 +481,7 @@ body {
     box-shadow: 0 35px 50px #0a1516c9;
     margin-bottom: 6em;
     margin: 3em;
-    padding: 2em;
+    padding: 1em;
   
 }
 
@@ -625,7 +648,8 @@ input[name='q']::placeholder {
 }
 
 .newsletter-container {
-    background-color: #dd26a012;
+    background-color: white;
+    /* background-color: #dd26a012; */
     /* background-color:#dd26a038; */
     /* background-color: #6495ed30; */
 }
@@ -637,7 +661,8 @@ input[name='q']::placeholder {
 .newsletter-row {
     padding-left: 8em;
     padding-right: 8em;
-    padding-top: 3em;
+    margin-top: 5em;
+    /* padding-top: 3em; */
     /* padding-bottom: 1em;*/
 }
 
@@ -668,12 +693,14 @@ input[name='q']::placeholder {
 }
 
 .newsletter-card {
+    background-color: rgb(240 157 212 / 6%);
+    border-color: black;
+    margin-bottom: 5em;
     padding-bottom: 5em;
-    padding-top: 5em;
     padding-left: 3em;
     padding-right: 3em;
-    border-color: black;
-
+    padding-top: 5em;
+    
     /* border-color: #2c65b3; */
     /*border-color: #2d81aa;*/
     /*border-color: #dd26a0;*/

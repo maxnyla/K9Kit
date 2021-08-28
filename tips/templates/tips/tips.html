@@ -27,13 +27,6 @@
    </div>
 
 
-      <!-- <div class="row">
-         <div class="col-12 text-center mt-5">
-            <img class="w-100 h-40 tip-image1"  src="{{ MEDIA_URL }}tips-twins.jpg" class="img-fluid" alt="Responsive image">
-         </div>
-      </div> -->
-
-
 
 </div>
 
@@ -61,30 +54,17 @@
             </div>
                <br>
                <br>
-
          </div>
-
       {% endfor %} 
    </div>
    
-   <!-- <div class="row">
-      <div class="col-12 text-center mt-5">
-         <img class="w-100 tip-image"  src="{{ MEDIA_URL }}tips-bones.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-   </div> -->
-
 </div>
 
 <div class="container tip-img-container">
    <div class="row tip-add">
-      <!-- <div class="col-12 text-center mt-5">
-         <img class="w-100 h-20 tip-image"  src="{{ MEDIA_URL }}tips-bones.jpg" class="img-fluid" alt="Responsive image">
-      </div> -->
-
       <!--Add tip button-->
       {% if request.user.is_superuser %}
-      <!-- <div class="row tip-add"> -->
-      
+     
          <div class=" col-12 text-center mt-3 mb-3 btn-add-review">
             <a href="" class="add-review-url">
                <span class="text-uppercase">Add Tip</span>
@@ -93,12 +73,10 @@
      
    </div>
    {% endif %}
-
    <!-- /. Add tip button-->
    </div>
 
 </div>
-
 
 
 <!-- /. Tips page -->

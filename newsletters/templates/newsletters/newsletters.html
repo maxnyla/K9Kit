@@ -25,10 +25,10 @@
 </div>
 
 <div class="container newsletter-container">
-   <div class="row newsletter-card newsletter-row mb-5 mt-5">
+   <div class="row newsletter-row">
       {% for newsletter in newsletters %}
          <div class="col-12 text-center">
-            <div class="card newsletter-card mb-5 mt-5">
+            <div class="card newsletter-card">
                <div class="card-body text-center">
                   <!-- <div class="col-12 text-center"> -->
                   <p class="font-weight-bold text-uppercase newsletter-subtitle"><i class="fas fa-dog review-icon"></i> {{ newsletter.newsletter_title }}  </p>
@@ -47,8 +47,6 @@
                   {% endif %}
                </div>
             </div>
-               <br>
-               <br>
 
          </div>
       {% endfor %} 
@@ -64,22 +62,21 @@
    </div>
 </div>
 
-   <!--Add newsletter button-->
 
-<!-- <div class="container"> -->
-   {% if request.user.is_superuser %}
+  
    <div class="row newsletter-add">
-      <!-- {% for newsletter in newsletters %} -->
-         <div class=" col text-center mt-3 mb-3 btn-add-review">
-            <a href="{% url 'add_newsletter' %}" class="add-review-url">
-                <span class="text-uppercase">Add Newsletter </span>
-            </a>
-         </div>
-      <!-- {% endfor %} -->
+      <!--Add newsletter button-->
+      {% if request.user.is_superuser %}
+            <div class=" col text-center mt-3 mb-3 btn-add-review">
+               <a href="{% url 'add_newsletter' %}" class="add-review-url">
+                  <span class="text-uppercase">Add Newsletter </span>
+               </a>
+            </div>
+      {% endif %}
+      <!-- /. Add newsletter button-->
    </div>
-   {% endif %}
-<!-- </div> -->
-   <!-- /. Add newsletter button-->
+   
+
 <!-- /. Newsletter page -->
 
 {% endblock %}
