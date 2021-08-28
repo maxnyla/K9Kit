@@ -79,7 +79,7 @@ def edit_tip(request, tip_id):
     template = "tips/edit_tip.html"
     context = {
         "form": form,
-        "tip": tipw,
+        "tip": tip,
     }
 
     return render(request, template, context)

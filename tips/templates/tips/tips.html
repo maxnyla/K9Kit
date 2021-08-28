@@ -44,10 +44,10 @@
                   <!-- </div> -->
                   {% if request.user.is_superuser %}
                      <small class="review-button ml-1">
-                        <a class="edit-newsletter" href="">Edit Tip</a> | 
+                        <a class="edit-newsletter" href="{% url 'edit_tip' tip.id %}">Edit Tip</a> | 
                      </small>
                      <small class="review-button">
-                        <a class= "delete-newsletter" href="">Delete Tip</a> 
+                        <a class= "delete-newsletter" href="{% url 'delete_tip' tip.id %}">Delete Tip</a> 
                      </small>
                   {% endif %}
                </div>
@@ -61,12 +61,12 @@
 </div>
 
 <div class="container tip-img-container">
-   <div class="row tip-add">
+   <div class="row add-newsletter">
       <!--Add tip button-->
       {% if request.user.is_superuser %}
      
-         <div class=" col-12 text-center mt-3 mb-3 btn-add-review">
-            <a href="" class="add-review-url">
+         <div class=" col-12 text-center mt-3 mb-3">
+            <a href="{% url 'add_tip' %}" class="btn-add-review add-review-url">
                <span class="text-uppercase">Add Tip</span>
             </a>
          </div>
