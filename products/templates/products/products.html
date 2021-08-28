@@ -55,7 +55,7 @@
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 product-card-wrapper">
-                        <!-- <div class="col-6 product-card-wrapper"> -->
+                        
                             <div class="card h-100 product-card">
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}" class="stretched-link">
@@ -71,7 +71,7 @@
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-2 text-center">
-                                    <p class="card-body-text font-weight-bold">{{ product.name }}</p>
+                                    <p class="card-body-text">{{ product.name }}</p>
                                 </div>
                                 <div class="card-footer border-0 text-left">
                                     <div class="row">

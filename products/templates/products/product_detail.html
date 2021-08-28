@@ -16,7 +16,7 @@
                     <div class="product-detail-container mb-5 ml-5 ">
                         <h2 class="mb-0 card-detail-text">{{ product.name }}</h2>
                         <p class="lead mb-0 text-left font-weight-bold product-price">£{{ product.price }}</p>
-<hr>
+                          <hr>
                         {% if product.category %}
                         <p class="small mt-1 mb-0">
                             <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -36,8 +36,7 @@
                             </small>
                         {% endif %}
 
-                        <!-- <p class="mt-3 card-detail-body-text">{{ product.description }}</p> -->
-<br> 
+                          <br> 
 
                         <form class="form mt-3" action="{% url 'add_to_bag' product.id %}" method="POST">
                           {% csrf_token %}
@@ -119,53 +118,22 @@
 
         <div class="row justify-content-center align-items-center mb-5 mt-2">
             <div class="col-12 col-md-6">
-                <div id="accordion product-detail-accord">
+                <div class="product-detail-accord">
 
                     <div class="card mb-5 mt-5">
-                      <div class="card-header card-detail-body-text" id="headingOne">
+                      <div class="card-header card-detail-header-text">
                         <h5 class="mb-0 ">
-                            
+                          
                             Description
                         
                         </h5>
                       </div>
                   
-                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body card-detail-body-text">
+                      <div class="card-body card-detail-body-text">
                           {{ product.description }}
-                        </div>
                       </div>
-
+                      
                     </div>
-
-                    <!-- <div class="card">
-                      <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Reviews
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Composition
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                        <div class="card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                      </div>
-                    </div> -->
 
                   </div>
             </div>
@@ -176,50 +144,25 @@
         <div class="div-parallax d-flex justify-content-center align-items-center w-100 parallax" id="block-four">
           <div class="row justify-content-center mb-5 mt-5">
             <div class="col-8 block-two-intro">
-              <h4 class="m-5 block-two-h4"> Are you feeling in need of fresh inspiration? Check our  newsletters
+              <h4 class="m-5 block-two-h4"> Are you feeling in need of fresh inspiration? Check our Tips section
                 for the best ideas!
               </h4>
                 <div class="row justify-content-center align-items-center block-two-inside mb-5">
                   <div class="col-10 text-center">
                     <h3 class="block-two-text"> 
-                      <a href="{% url 'newsletters' %}" class="reviews-text"> <i class="fas fa-dog"></i> Newsletters
+                      <a href="{% url 'tips' %}" class="reviews-text"> <i class="fas fa-dog"></i> Tips
                       </a>
                       
                     </h3>
                     
                   </div> 
     
-                  <!-- <div class="col-8 text-center">
-                    <h4>
-                      <a href="{% url 'products' %}" class="shop-now-button btn btn-lg text-uppercase"> <i class="fas fa-dog shop-button-icon"></i>  Shop now   
-                      </a>
-                    </h4>
-                  </div>							 -->
+                
                 </div>
             </div>					
           </div>
         </div>
-		<!-- <div class="div-parallax d-flex justify-content-center align-items-center w-100 vh-80 parallax" id="product-detail-block-two">
-			<div class="row justify-content-center">
-				<div class="col-12 product-detail-block-two-intro">
-					<div class="h4 m-5 block-two-h4"> Need inspiration for more? </div>
-						<div class="row justify-content-center align-items-center product-detail-block-two-inside">
-							<div class="col-8">
-								<p class="product-detail-block-two-text">  Check our best sellers</p>
-							</div>
 
-							<div class="col-8">
-								<h4>
-									<a href="{% url 'products' %}" class="shop-now-button btn btn-lg text-uppercase"> <i class="fas fa-dog shop-button-icon"></i>     
-									</a>
-								</h4>
-							</div>
-
-						</div>
-				</div>
-					
-			</div>
-		</div> -->
 
 {% endblock %}
 

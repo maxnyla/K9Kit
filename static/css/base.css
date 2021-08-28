@@ -2,6 +2,16 @@ html {
     height: 100%;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+#topnav {
+    background-color: white;
+}
+
+
+
 /* from Bulma */
 .icon { 
     align-items: center;
@@ -308,9 +318,10 @@ html {
 
 .card-body-text {
     font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    color: #2c65b3;
-    font-size: larger;
+    font-weight: 700;
+    color: #f079c8;
+    /* color: #2c65b3; */
+    font-size: x-large;
     letter-spacing: .1em;
     /* font-family: 'Anton', sans-serif; */
     /* font-family: 'Righteous', cursive; */
@@ -330,17 +341,14 @@ html {
 .product-detail-img {
     height: 28em;
     width: 28em;
-    /* height: 30em;
-    width: 30em; */
-    /* margin: 2em; */
-    padding: 2em;
+    padding: 1em;
+    object-fit: cover;
 }
 
 .product-img {
-    height: 18em;
-    width: 18em;
-    /* height: 23em;
-    width: 23em; */
+    height: 25em;
+    object-fit: cover;
+    width: 25em;
 }
 
 .bag-img {
@@ -381,17 +389,30 @@ html {
     color: #ab830b;
 }
 
+.card-header {
+    height: 3em;
+    background-color: rgb(240 157 212 / 19%);
+    padding-top: 1em;
+    text-shadow: 0 0 black;
+}
+
+
 .card-detail-text {
-    color:#dd26a0;
+    color: #f079c8;
+    /* color:#dd26a0; */
     /* color: #2c65b3; */
     font-size: largest;
     font-weight: 500;
 }
 
+
 .card-detail-body-text {
-    color: #2c65b3;
-    font-size: larger;
+    color: black;
+    font-size: large;
+    height: fit-content;
+    padding: 2.5em;
 }
+
 
 
 .reg-title  {
