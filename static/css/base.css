@@ -215,6 +215,14 @@ body {
     /*padding: 2em;*/
 }
 
+.block-four-product-detail {
+    /* background-color: #b8c6dd; */
+    background-color: #b8c6dd38;
+    /* background-color: rgb(0 123 255 / 13%); */
+    height:40em;
+}
+
+
 .product-detail-block-two-intro {
     background-color: #6f98c5;
     border-radius: 80px;
@@ -244,6 +252,12 @@ body {
     /*color: #dd26a0bf;*/
     /*color: #dd26a0;*/
     padding-bottom: .3em;
+}
+
+
+.footer-cont {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .footer-social-icon {
@@ -390,10 +404,12 @@ body {
 }
 
 .card-header {
-    height: 3em;
+    height: 4em;
     background-color: rgb(240 157 212 / 19%);
-    padding-top: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 3em;    
     text-shadow: 0 0 black;
+    text-align: center;
 }
 
 
@@ -407,6 +423,8 @@ body {
 
 
 .card-detail-body-text {
+    background-color:#fcedf724;
+    /* background-color: rgb(184 198 221 / 16%); */
     color: black;
     font-size: large;
     height: fit-content;
@@ -419,6 +437,7 @@ body {
     color: #000000;
     margin: .5em;
     margin-left: 1em;
+    text-shadow: 0px -1px 0px black;
 }
 
 .reg-title-bold {
@@ -432,14 +451,15 @@ body {
 }
 
 .reg-wrapper {
-    background-color: rgba(0, 0, 0, 0.5);
-    background: #d7baa600;
+    background-color: #f8f9fa8f;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* background: #d7baa600; */
+    border-radius: 3.5em;
     box-shadow: 0 35px 50px #0a1516c9;
-    /* height: 20em; */
     margin-bottom: 6em;
     margin: 3em;
     padding: 2em;
-    /* width: 34em; */
+  
 }
 
 .box {
