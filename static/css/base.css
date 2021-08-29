@@ -685,15 +685,15 @@ input[name='q']::placeholder {
 
 
 .newsletter-row {
-    padding-left: 8em;
-    padding-right: 8em;
+    /* padding-left: 8em;
+    padding-right: 8em; */
     margin-top: 5em;
 }
 
 .newsletter-img-container {
     /* background-color: #6495ed30; */
-    padding-left: 8.5em;
-    padding-right: 8.5em;
+    /* padding-left: 8.5em;
+    padding-right: 8.5em; */
     padding-bottom: 3em; 
 }
 
