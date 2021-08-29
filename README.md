@@ -1,45 +1,230 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<p align="center">
+  <img src="/static/readme/logo.png" 
+alt="logo"/>
+</p>
 
-Welcome maxnyla,
+## Code Institute - Milestone Project 4
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+![Image containing example of responsiveness within several screens](/static/readme/responsive.png)
 
-## Gitpod Reminders
+This project was created for the last (fourth) Milestone Project of the Full Stack Software Development Diploma at Code Institute. The main requirements were to produce "a full-stack site based around business logic used to control a centrally-owned dataset. You will set up an authentication mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service. This will be achieved using HTML, CSS, JavaScript, Python+Django, MySQL or Postgres, Stripe and any additional libraries and external APIs.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+It was also a requirement to add payment facilities and this was achieved through using Stripe.
 
-`python3 -m http.server`
+The live site can be found [here](https://k9kit.herokuapp.com/). 
 
-A blue button should appear to click: *Make Public*,
+**For testing purposes, please use the following credit card details:**
 
-Another blue button should appear to click: *Open Browser*.
+`Card number:` 4242 4242 4242 4242
+`Exp:` any date in the future (please use MM/YY format)
+`CSV:` any 3 numbers, for example 424
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: *Make Public*,
+## Table of Contents:  <a name="home"></a>
 
-Another blue button should appear to click: *Open Browser*.
+- [Introduction](#introduction)
+- [User Experience](#ux)
+  - [User Stories](#user-stories)
+  - [Visual Identity](#visual-identity)
+    - [Logo and branding](#logo)
+    - [Colour scheme](#colours)
+    - [Wireframes](#wireframes)
+- [Technologies Used](#technologies-used)
+  - [Languages and Frameworks](#languages-and-frameworks)
+  - [Tools and resources](#tools-and-resources)
+- [Features](#features)
+    - [Features for future implementation](#future-feat)
+- [Database Design](#database-design)
+- [Testing](#testing)
+- [Deployment](#deployment)
+  - [Local Hosting](#local-hosting)
+  - [Live Hosting](#hosting)
+  - [AWS](#aws)
+- [Credits](#credits)
+  - [Images](#images)
+  - [Image editing](#image-editing)
+  - [Coding Ideas](#coding-ideas)
+- [Acknowledgements](#acknowledgements)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-## Updates Since The Instructional Video
+## **Introduction**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+This project was created for the last (fourth) Milestone Project of the Full Stack Software Development Diploma at Code Institute. The aim of the site is to provide a pleasant online shopping experience in order for customers to view and purchase dog apparel. There are different types of dog clothing and accessories for sale, as well as toys. The site also features a sort of 'blog' area where periodic newsletters are posted by the site owners and also a 'tips' section where useful information for dog owners is posted every now and then.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+There is also the option for customers to ad their own review on their experience when purchasing from the site.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Due to the nature of the business (clothes and accessories for dogs!) the tone of the site and design is all very light-hearted and playful, as well as the communication style.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## **User Experience**
+ 
+### <ins>User Stories</ins>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+**Site owner:**
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- As a **site owner**, I want to be able to provide an array of clothes and accessories for dogs to potential customers and display them in the best way possible.
+- As a **site owner**, I want to be able to provide real-time information on current stock available for purchase at any one time.
+- As a **site owner**, I want to be able to add new products to the site.
+- As a **site owner**, I want to be able to edit existing products on the site.
+- As a **site owner**, I want to be able to delete existing products from the site.
+- As a **site owner**, I want to be able to add a Newsletter post to the site.
+- As a **site owner**, I want to be able to edit Newsletters on the site.
+- As a **site owner**, I want to be able to delete Newsletters from the site
+- As a **site owner**, I want to be able to add a 'Tip' post to the site.
+- As a **site owner**, I want to be able to edit 'Tip' content on the site.
+- As a **site owner**, I want to be able to delete 'Tip' content from the site.
+- As a **site owner**, I want to be able to edit and delete reviews from the site in order to avoid malicious content being posted.
+- As a **site owner**, I want to be able to take payment through the site.
 
---------
 
-Happy coding!
+
+**Users:** 
+- As a **user**, I want the site to be easy to navigate and intuitive.
+- As a **user**, I want to be able to browse the site and search by keywords.
+- As a **user**, I want to be able to make a purchase without needing to register on the site. 
+- As a **user**, I want to be able to register on the site and have an account. 
+- As a **user**, I want to receive confirmation emails.
+- As a **user**, I want to be able to log in and out of the site.
+- As a **user**, I want to be able to store my default delivery information and my order history.
+- As a **user**, I want to be able to view all the products available, and also filter the view by category and price. 
+- As a **user**, I want to be able to view more details about each product by clicking on it.  
+- As a **user**, I want to be able to easily add products to my basket. 
+- As a **user**, I want to be able to easily navigate to my bag and see which products I have added to it. 
+- As a **user**, I want to be able to see how much the bag total amounts to and add/remove items from the bag before checkout. 
+- As a **user**, I want to be able to leave a review on the website to help future customers decide.  
+- As a **user**, I want to be able to view useful content such as newsletters and tips.
+- As a **user**, I want to be able to leave a review with my experience for future customers.
+
+
+
+[Back to Table of Contents](#home)
+
+### <ins>Visual Identity</ins>
+
+
+### <ins>Logo and branding</ins>
+
+
+### <ins>Colour scheme</ins>
+
+All the wireframes were created with [Microsoft Paint](https://jspaint.app/).
+
+I created a wireframe for each page, and the wireframes can be found here:
+
+[All wireframes for MS4 K9-KIT](https://github.com/maxnyla/k9kit/tree/master/static/readme/wireframes/)
+
+
+## Colour scheme <a name="colour"></a>
+
+I used a mix of the same colours throughout the whole site, with mild variations whilst keeping with the hue and theme. I also chose images that complemented these colours in order to pull the theme together.
+
+Below is a list of the colours which were used as the main features of the site:
+
+- white: "white"
+- black: "black"
+- pink: #dd26a073
+- blue: #00ffffe6
+- blue: #4c7db3
+- blue: #6f98c5
+- hot pink: #dd26a0
+
+The colour wheel for my base colour scheme can be found below:
+
+![image of main colours](/static/docs/readme/colours.png)
+
+
+
+
+### <ins>Wireframes</ins>
+
+
+
+
+[Back to Table of Contents](#home)
+
+## **Technologies Used**
+
+### <ins>Languages and Frameworks</ins>
+
+
+
+
+
+
+### <ins>Tools and resources</ins>
+
+
+
+
+
+
+[Back to Table of Contents](#home)
+## **Features**
+
+
+
+
+
+### <ins>Features for future implementation</ins>
+
+
+
+
+
+
+
+[Back to Table of Contents](#home)
+## **Database Design**
+
+
+
+
+
+
+[Back to Table of Contents](#home)
+## **Testing**
+
+
+
+
+
+
+
+
+[Back to Table of Contents](#home)
+## **Deployment**
+
+### <ins>Local hosting</ins>
+
+
+
+
+### <ins>Live Hosting</ins>
+
+
+
+
+
+### <ins>AWS</ins>
+
+
+
+
+
+[Back to Table of Contents](#home)
+## **Credits**
+
+
+
+
+
+
+
+
+
+
+[Back to Table of Contents](#home)
+## **Acknowledgements**
+
+
