@@ -561,6 +561,9 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.main-review-container {
+    background-color:black;
+}
 
 .review-card {
     border-color: #2c65b3;
@@ -631,8 +634,10 @@ input[name='q']::placeholder {
 .btn-add-review:hover,
 .btn-add-review:active,
 .btn-add-review:focus {
-    background: black;
-    color: #00ffffe6;
+    background: #00ffffe6;
+    /* background: black; */
+    /* color: #00ffffe6; */
+    color: white;
     /* color: white; */
 
 }
@@ -714,6 +719,24 @@ input[name='q']::placeholder {
 
 .newsletter-text {
     color: black;
+}
+
+
+.btn-add-news {
+    color: #f8f9fa;
+    letter-spacing: .1em;
+    font-size: x-large;
+    font-weight:600;
+    margin: .5em;
+}
+
+
+.btn-add-news:hover,
+.btn-add-news:active,
+.btn-add-news:focus {
+    background: black;
+    color: #00ffffe6;
+    /* color: white; */
 }
 
 .news-image {
