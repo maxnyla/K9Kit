@@ -10,74 +10,80 @@
 {% endblock %}
 
 {% block content %}
+
+<!--  Tips page -->
+
 <div class="overlay"></div>
 
-<div class="container newsletter-heading-cont">
+<div class="container main-news-container mb-5 mt-5 pb-5">
 
-   <div class="row">
+      <div class="container newsletter-heading-cont">
 
-      <div class="col-12 text-center mt-3">
-         <br>
-         <h2 class="review-title mb-4"> <b>Tips</b></h2>
-         <br>
-         <h5 class="review-subtitle">This is where you can get lots of great info and tips for a fun life with your fluffs!</h5>
-         <br>
+         <div class="row">
+
+            <div class="col-12 text-center mt-3">
+               <br>
+               <h2 class="review-title mb-4"> <b>Tips</b></h2>
+               <br>
+               <h5 class="review-subtitle">This is where you can get lots of great info and tips for a fun life with your fluffs!</h5>
+               <br>
+            </div>
+
+         </div>
+
+
+
       </div>
 
-   </div>
 
-
-
-</div>
-
-
-<div class="container tip-container">
-   <div class="row tip-card newsletter-row mb-5 mt-5">
-      {% for tip in tips %}
-         <div class="col-12 text-center">
-            <div class="card tip-card mb-5 mt-5">
-               <div class="card-body tip-card-body text-center">
-                  <!-- <div class="col-12 text-center"> -->
-                  <p class="font-weight-bold text-uppercase newsletter-subtitle"> {{ tip.tip_title }}  </p>
-                  <p class= "newsletter-text">{{ tip.tip_body }}</p>
-                  <p class="newsletter-text font-italic font-bold">From {{ tip.tip_by }}</p>
-                  <!-- </div> -->
-                  {% if request.user.is_superuser %}
-                     <small class="review-button ml-1">
-                        <a class="edit-newsletter" href="{% url 'edit_tip' tip.id %}">Edit Tip</a> | 
-                     </small>
-                     <small class="review-button">
-                        <a class= "delete-newsletter" href="{% url 'delete_tip' tip.id %}">Delete Tip</a> 
-                     </small>
-                  {% endif %}
+      <div class="container tip-container">
+         <div class="row tip-card newsletter-row mb-5 mt-5">
+            {% for tip in tips %}
+               <div class="col-12 text-center">
+                  <div class="card tip-card mb-5 mt-5">
+                     <div class="card-body tip-card-body text-center">
+                        <!-- <div class="col-12 text-center"> -->
+                        <p class="font-weight-bold text-uppercase newsletter-subtitle"> {{ tip.tip_title }}  </p>
+                        <p class= "newsletter-text">{{ tip.tip_body }}</p>
+                        <p class="newsletter-text font-italic font-bold">From {{ tip.tip_by }}</p>
+                        <!-- </div> -->
+                        {% if request.user.is_superuser %}
+                           <small class="review-button ml-1">
+                              <a class="edit-newsletter" href="{% url 'edit_tip' tip.id %}">Edit Tip</a> | 
+                           </small>
+                           <small class="review-button">
+                              <a class= "delete-newsletter" href="{% url 'delete_tip' tip.id %}">Delete Tip</a> 
+                           </small>
+                        {% endif %}
+                     </div>
+                  </div>
+                     <br>
+                     <br>
                </div>
-            </div>
-               <br>
-               <br>
+            {% endfor %} 
          </div>
-      {% endfor %} 
-   </div>
-   
-</div>
+         
+      </div>
 
-<div class="container tip-img-container">
-   <div class="row add-newsletter">
-      <!--Add tip button-->
-      {% if request.user.is_superuser %}
-     
-         <div class=" col-12 text-center mt-3 mb-3">
-            <a href="{% url 'add_tip' %}" class="btn-add-news add-review-url">
-               <span class="text-uppercase">Add Tip</span>
-            </a>
+      <div class="container tip-img-container">
+         <div class="row add-newsletter">
+            <!--Add tip button-->
+            {% if request.user.is_superuser %}
+         
+               <div class=" col-12 text-center mt-3 mb-3">
+                  <a href="{% url 'add_tip' %}" class="btn-add-news add-review-url">
+                     <span class="text-uppercase">Add Tip</span>
+                  </a>
+               </div>
+         
          </div>
-     
-   </div>
-   {% endif %}
-   <!-- /. Add tip button-->
-   </div>
+         {% endif %}
+         <!-- /. Add tip button-->
+         
+
+      </div>
 
 </div>
-
 
 <!-- /. Tips page -->
 

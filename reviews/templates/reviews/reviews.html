@@ -10,7 +10,9 @@
 {% endblock %}
 
 {% block content %}
+
 <!-- Review page  -->
+
 <div class="overlay"></div>
 
 <div class="container main-review-container mb-5 mt-5 pb-5">
@@ -39,14 +41,16 @@
                   <p class= "review-text">{{ review.review_body }}</p>
                   <p class="review-text">{{ review.review_date }}</p>
                   <p class="review-text font-italic font-bold mt-5">By: {{ review.review_by }}</p>
-                  {% if request.user.is_authenticated %}               
+                  
+                     {% if request.user.is_superuser %}
                      <small class="review-button ml-1">
                         <a class="edit-review" href="{% url 'edit_review' review.id %}">Edit Review</a> | 
                      </small>
                      <small class="review-button">
                         <a class= "delete-review" href="{% url 'delete_review' review.id %}">Delete Review</a> 
                      </small>
-                  {% endif %}
+                     {% endif %} 
+                 
                </div>
             </div>
          </div>
@@ -65,5 +69,7 @@
    </div> 
 
 </div>
+
 <!-- /. Review page -->
+
 {% endblock %}
