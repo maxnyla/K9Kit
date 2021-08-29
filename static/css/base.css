@@ -51,8 +51,6 @@ i:hover {
 
 .delivery-banner {
     background-color: #0000008f;
-    /* margin-left: 1px;
-    margin-right: 1px; */
 }
 
 .logo-font {
@@ -963,14 +961,29 @@ input[name='q']::placeholder {
 }
 
 
-/* ------ Top of navbar padding when collapsed on mobile --- */
+/* ------ When on mobile --- */
+
 @media (max-width: 991px) {
+
     .header-container {
         padding-top: 116px;
     }
 
     body {
         height: calc(100vh - 116px);
+    }
+
+    .top-link {
+        color: white;
+        font-size: medium;
+    }
+    
+    .btn-add-news {
+        color: #f8f9fa;
+        letter-spacing: .1em;
+        font-size: large;
+        font-weight:600;
+        margin: .5em;
     }
 }
 
