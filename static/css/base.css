@@ -682,9 +682,9 @@ input[name='q']::placeholder {
 }
 
 .newsletter-img-container {
-    background-color: #6495ed30;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+    /* background-color: #6495ed30; */
+    padding-left: 8.5em;
+    padding-right: 8.5em;
     padding-bottom: 3em; 
 }
 
