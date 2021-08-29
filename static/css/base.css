@@ -769,7 +769,7 @@ input[name='q']::placeholder {
 .tip-card {
     background: url('/media/tips-bones.jpg') no-repeat center center;
     background-attachment: fixed;
-    background-size: cover; */
+    background-size: cover; 
 }
 
 .tip-image2 {
