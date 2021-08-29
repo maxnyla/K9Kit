@@ -74,6 +74,15 @@ i:hover {
 }
 
 
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+
+.navbar-toggler {
+    color: white;
+}
+
 .navbar-toggler-icon {
     color: white;
 }
