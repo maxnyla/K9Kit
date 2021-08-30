@@ -16,73 +16,68 @@
 <div class="overlay"></div>
 
 <div class="container main-news-container mb-5 mt-5 pb-5">
-      <div class="container newsletter-heading-cont">
-         <div class="row">
-            <div class="col-12 text-center mt-3">
-               <br>
-               <h2 class="newsletter-title mb-4"> <b>Newsletters</b></h2>
-               <br>
-               <h5 class="review-subtitle">Keep up with all our news and all that's coming next!</h5>
-               <br>
-            </div>
+
+   <div class="container newsletter-heading-cont">
+      <div class="row">
+         <div class="col-12 text-center mt-3">
+            <br>
+            <h2 class="newsletter-title mb-4"> <b>Newsletters</b></h2>
+            <br>
+            <h5 class="review-subtitle">Keep up with all our news and all that's coming next!</h5>
+            <br>
          </div>
       </div>
+   </div>
 
-      <div class="container newsletter-container">
-         <div class="row newsletter-row">
-            {% for newsletter in newsletters %}
-               <div class="col-12 text-center">
-                  <div class="card newsletter-card">
-                     <div class="card-body text-center">
-                        <!-- <div class="col-12 text-center"> -->
-                        <p class="font-weight-bold text-uppercase newsletter-subtitle"><i class="fas fa-dog review-icon"></i> {{ newsletter.newsletter_title }}  </p>
-                        <p class= "newsletter-text">{{ newsletter.newsletter_body }}</p>
-                        <p class="newsletter-text mt-5">{{ newsletter.newsletter_date }}</p>
-                        <p class="newsletter-text font-italic font-bold">From {{ newsletter.newsletter_by }}</p>
-                        <!-- </div> -->
-                           
-                        {% if request.user.is_superuser %}
-                           <small class="review-button ml-1">
-                              <a class="edit-newsletter" href="{% url 'edit_newsletter' newsletter.id %}">Edit Newsletter</a> | 
-                           </small>
-                           <small class="review-button">
-                              <a class= "delete-newsletter" href="{% url 'delete_newsletter' newsletter.id %}">Delete Newsletter</a> 
-                           </small>
-                        {% endif %}
-                     </div>
+   <div class="container newsletter-container">
+      <div class="row newsletter-row">
+         {% for newsletter in newsletters %}
+            <div class="col-12">
+               <div class="card newsletter-card">
+                  <div class="card-body text-center">
+                     <p class="font-weight-bold text-uppercase newsletter-subtitle"><i class="fas fa-dog review-icon"></i> {{ newsletter.newsletter_title }}  </p>
+                     <p class= "newsletter-text">{{ newsletter.newsletter_body }}</p>
+                     <p class="newsletter-text mt-5">{{ newsletter.newsletter_date }}</p>
+                     <p class="newsletter-text font-italic font-bold">From {{ newsletter.newsletter_by }}</p>
+
+                     {% if request.user.is_superuser %}
+                        <small class="review-button ml-1">
+                           <a class="edit-newsletter" href="{% url 'edit_newsletter' newsletter.id %}">Edit Newsletter</a> | 
+                        </small>
+                        <small class="review-button">
+                           <a class= "delete-newsletter" href="{% url 'delete_newsletter' newsletter.id %}">Delete Newsletter</a> 
+                        </small>
+                     {% endif %}
+
                   </div>
-
                </div>
-            {% endfor %} 
-         </div>
-         
-      </div>
 
-      <div class="container newsletter-img-container">
-         <div class="row">
-            <div class="col-12 text-center mt-5">
-               <img class="w-100 h-60 news-image"  src="{{ MEDIA_URL }}y-news.jpg" class="img-fluid" alt="Responsive image">
             </div>
+         {% endfor %} 
+      </div>
+   </div>
+
+   <div class="container newsletter-img-container">
+      <div class="row">
+         <div class="col-12 text-center mt-5">
+            <img class="w-100 h-60 news-image"  src="{{ MEDIA_URL }}y-news.jpg" class="img-fluid" alt="Responsive image">
          </div>
       </div>
+   </div>
 
-
-      
-      <div class="row add-newsletter">
-            <!--Add newsletter button-->
-            {% if request.user.is_superuser %}
-                  <div class=" col text-center mt-3 mb-3">
-                     <a href="{% url 'add_newsletter' %}" class="btn-add-news add-review-url">
-                        <span class="text-uppercase">Add Newsletter </span>
-                     </a>
-                  </div>
-            {% endif %}
-            <!-- /. Add newsletter button-->
-      </div>
+   <div class="row add-newsletter">
+      <!--Add newsletter button-->
+         {% if request.user.is_superuser %}
+            <div class=" col text-center mt-3 mb-3">
+               <a href="{% url 'add_newsletter' %}" class="btn-add-news add-review-url">
+                  <span class="text-uppercase">Add Newsletter </span>
+               </a>
+            </div>
+         {% endif %}
+      <!-- /. Add newsletter button-->
+   </div>
          
 </div>
-
-
 <!-- /. Newsletter page -->
 
 {% endblock %}

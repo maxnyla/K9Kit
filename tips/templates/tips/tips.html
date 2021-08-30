@@ -39,14 +39,14 @@
       <div class="container tip-container">
          <div class="row tip-card newsletter-row mb-5 mt-5">
             {% for tip in tips %}
-               <div class="col-12 text-center">
+               <div class="col-12">
                   <div class="card tip-card mb-5 mt-5">
                      <div class="card-body tip-card-body text-center">
-                        <!-- <div class="col-12 text-center"> -->
+                       
                         <p class="font-weight-bold text-uppercase newsletter-subtitle"> {{ tip.tip_title }}  </p>
                         <p class= "newsletter-text">{{ tip.tip_body }}</p>
                         <p class="newsletter-text font-italic font-bold">From {{ tip.tip_by }}</p>
-                        <!-- </div> -->
+                        
                         {% if request.user.is_superuser %}
                            <small class="review-button ml-1">
                               <a class="edit-newsletter" href="{% url 'edit_tip' tip.id %}">Edit Tip</a> | 
