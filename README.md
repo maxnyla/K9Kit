@@ -163,6 +163,7 @@ For this reason, the branding and colours are in keeping with this fun theme.
 
 
 
+
 ### <ins>Logo and branding</ins>
 
 The logo, in keeping with the general 'cute' and fun design of the rest of the site and following the dog related theme, is a cartoon-like depiction of a bone. 
@@ -218,6 +219,134 @@ It is also worth nothing that, for the purpose of improving user experience, I h
 
 [Back to Table of Contents](#home)
 
+
+## <ins>**Features**</ins>
+
+**IMPLEMENTED FEATURES:**
+
+- Fixed navigation- allows the user to easily navigate to different sections of the website and in particular search for products, view products, view total of items added to bag, click on their bag which can take the user through to checkout, and view their profile – These features are available on the nav bar across all pages. 
+
+- Colour palette-  Colours are used logically across the site. For example the colours used on the homepage are then replicated across the site. 
+
+- Bootstrap Toasts- These are used for all flashed messages after user has completed an action.
+
+- Search bar- The navbar sits at the top of the screen and is linked to keyword searches. 
+
+**HOME** 
+
+- The user sees an image and introductory title explaining the purpose of the website. The user contains a CTA which links to the products page. When scrolling down, the user is then presented an option to click on a button to view the Camper Hampers blog, and further down the user can also click to view a page containing Customer Testimonials. 
+
+**LOG IN PAGE** 
+
+- This feature contains a login form where an existing user can input their username and password to log in. Once details have been entered, the user can click on ‘Submit’ and this queries the DB to see if the user already exists. If they enter the wrong password and/or username, they are shown a message telling the user that the details are incorrect and to try again. Users on this page that don’t yet have an account are prompted to sign up with a message and sign up button.  Once users successfully log in, they are taken to the home page.
+
+**ALL PRODUCTS PAGE**
+
+- Bootstrap cards with Basic product information: Image, Product Name, Price and Category.
+- Clicking the image takes the user to the specific product detail page.
+- Clicking the Category name will filter, and display, all the products for that Category.
+- Sort dropdown allows the user to manipulate the display by Name, Category, and Price - this also reversed.
+- If the user is a SuperUser, the ‘Edit’ and ‘Delete’ links are displayed to allow easy management of products. 
+
+**PRODUCT DETAIL PAGE**
+
+- The user will see a larger product image along with the Product Name, Product Description, Price and Category of the product. 
+- The user can edit the quantity of the product displayed, by using the increase and decrease quantity icons which are placed either side of Number Input Field. This field can also be updated by using the up/down arrows that appear.
+- The user can choose to click a button to add the product(s) to their bag or they can click a button to keep shopping – these options are available below the quantity input field.
+- ‘Keep Shopping’ button returns the user to the All Products page and ‘Add to Bag’ button adds items to the bag which then displays a Bootsrap Toast confirming success of the action. The bag then keeps a running bag total and display of the contents as the user adds or removes items to the bag whilst on the site. 
+
+
+**BAG PAGE**
+
+- The user is shown a summary of the items in their bag, including product image, description, price and quantity. 
+- The user will be able to adjust the quantity of the items in the bag using the increase/decrease icons and clicking the update link or remove the whole line by clicking the remove link.
+- The buttons at the bottom allow the user to confirm that they wish to proceed to secure checkout, which if clicked takes the user to the checkout page or to the user can choose to return to the All Products page.
+
+**CHECKOUT PAGE**
+- The user can view several sections of information on this page, including user details and delivery details, as well as an order summary. 
+- The user is required to complete the checkout form before being able to continue the checkout process. This includes completing required fields (the user is shown a message if they try to submit the form and haven’t completed them, asking then to complete the required fields in order to continue, otherwise the user cannot submit the form). 
+- If the user has created an account, they can choose to save their details on this form to their profile. 
+- `STRIPE` provides credit card validation to the credit card field on the form. 
+- The right hand column displays the user bag information so they are able to double check what they are purchasing.
+- Once the user submits the payment information an opaque spinning overlay appears to show that the payment is being processed.
+
+
+**CHECKOUT SUCCESS PAGE**
+- The user is presented with a summary of their purchase, including order number and contact details and a Thank You message.
+- A Bootstrap Toast also displays to say that the order has been processed and that a confirmation has been sent to the user’s email.
+- A button under the summary enables to user to return to the All Products page. 
+
+**MY PROFILE PAGE**
+
+-	Under their profile page, the user can view their default delivery information if they chose to add this.
+-	The user can also view their Order History, including an Order Number, the Date the order was made, the items purchased and the total cost of the order. 
+
+**REVIEWS PAGE**
+
+-	The user can see an image of a dog as well as a title and introduction text
+-	Underneath the user can see a list of different reviews displayed simply in cards with a border. The reviews include a title, text, and the name of the author. 
+-	If the user is a superuser, they can click on ‘Edit’ on each card which takes them to a page with a prefilled Edit form, where they can edit the review. 
+-	Again, if the user is a superuser, they can click on ‘Delete’ on each card which removes the testimonial from the page (and the database). 
+-	Bootstrap Toasts display messages to the superuser if they edit or delete a testimonial to confirm their actions. 
+-	At the bottom of the page the user can choose to return to the Home page or choose to View Products.
+
+**NEWS PAGE**
+
+-	The user can see an introductory title and text and a series of cards arranged below.
+-	Underneath the user can see a number of newsletters articles from the site owners, which include newsletter title, text and the date posted. 
+-	If the user is a superuser, they can click on ‘Edit’ on each newsletter post which takes them to a page with a prefilled Edit form, where they can edit the post. 
+-	Similarly, if the user is a superuser, they can click on ‘Delete’ on each newsletter post which removes the post from the page (and the database). 
+-	At the bottom of the page the user can choose to add a new newsletter post via a button which opens a form.
+
+**TIPS PAGE**
+
+-	The user can see an introductory title and text and a series of cards arranged below. The background for the cards is a playful image of bones.
+-	Underneath the user can see a number of tips articles from the site owners, which include the tip title and text.
+-	If the user is a superuser, they can click on ‘Edit’ on each tip post which takes them to a page with a prefilled Edit form, where they can edit the post. 
+-	Similarly, if the user is a superuser, they can click on ‘Delete’ on each tip post which removes the post from the page (and the database). 
+-	At the bottom of the page the user can choose to add a new tip post via a button which opens a form.
+
+**REGISTER** 
+
+- This feature contains a form where the user can input a username and password in order to create an account. If they enter a username that already exists, they are shown a message explaining this and asking them to try again. Once the user clicks on ‘Sign Up’, the user is sent an email which contains a link they have to click on in order to confirm registration. The link in the email takes the user to a page on the site where they can confirm their registration. Once confirmed, the user is taken to the Products page.  
+
+**LOG IN** 
+
+- This feature appears in the nav bar under My Account and also on the footer and homepage when a user is logged out.
+- This page can only be accessed by users that are authenticated.
+- The page includes a prompt that confirms that a user really does want to leave the site, with a 'Log Out' button to do so.
+- Once signed out, users are redirected back to the Home page and they can no longer view their My Profile page. 
+
+**LOG OUT** 
+
+- This feature appears in the nav bar under My Account and also on the footer and homepage when a user is logged in.
+- This page can only be accessed by users that are authenticated.
+- The page includes a prompt that confirms that a user really does have an account, with a 'REGISTER' button to do so if they do not.
+- Once signed out, users are redirected back to the Home page and they can no longer view their My Profile page. 
+
+
+**FOOTER** - the footer is split in two parts for aesthetic reasons, as they have two different background colours. One contains social media icons with links to social media pages that open up in a new page. The lower part of the Footer also contains links to view the ‘Products’ page and the homepage. Also, the login/logout button depending on whether the user is logged in at the time. 
+
+
+**FEATURES FOR FUTURE IMPLEMENTATION:**
+
+Items that would be interesting for future development are:
+
+- Allow users to add more fields to their profile: Full name, email, etc.
+
+- Allow users to add products to their 'favourites' so they can access liked items later on and purchase these.
+
+- Allow users to like reviews
+
+- Allow users to create and add items to a wishlist or 'save for later' list ready for purchase later on.
+
+- Allow users to upload an image when leaving a review as well as their text.
+
+- Allow users to select a specific date for delivery. 
+
+
+
+[Back to Table of Contents](#home)
 
 
 ## **Technologies Used**
@@ -278,35 +407,6 @@ It is also worth nothing that, for the purpose of improving user experience, I h
 - [Techsini](https://techsini.com/multi-mockup/index.php) - Responsive website mockup image generator.
 
 - [Gauger](https://gauger.io/fonticon/) - This was used to create the favicon for the website.
-
-
-[Back to Table of Contents](#home)
-
-
-
-## **Features**
-
-
-
-
-
-
-### <ins>Features for future implementation</ins>
-
-Items that would be interesting for future development are:
-
-- Allow users to add more fields to their profile: Full name, email, etc.
-
-- Allow users to add products to their 'favourites' so they can access liked items later on and purchase these.
-
-- Allow users to like reviews
-
-- Allow users to create and add items to a wishlist or 'save for later' list ready for purchase later on.
-
-- Allow users to upload an image when leaving a review as well as their text.
-
-- Allow users to select a specific date for delivery. 
-
 
 
 [Back to Table of Contents](#home)
@@ -474,7 +574,7 @@ The below tools were used for code validation:
 
 ### <ins>Hosting</ins>
 
-The site is hoseted on [Heroku](https://www.heroku.com/home).
+The site is hosted on [Heroku](https://www.heroku.com/home).
 
 Deployment of the site was achieved by following the steps below:
 
@@ -684,7 +784,7 @@ If you wish to clone a copy of my project you will need to:
 
 The shop displayed on this website is purely fictional and created by myself.
 
-### <ins>images</ins>
+### <ins>Images</ins>
 
 The images used for this project are a mix. Some are my own photos and the rest were taken from:
 
@@ -710,14 +810,14 @@ Some of them are:
 
 -Google (for all the things that I've looked up during this project, which have led me to all these amazing sites)
 
--Of course I must mention my fantastic mentor Felipe Souza Alarcon for all his patience, help and ideas during this project, and his flexibility and availability. 
+-Of course I must mention my fantastic mentor **Felipe Souza Alarcon** for all his patience, help and ideas during this project, and his flexibility and availability. 
 Always much appreciated.
 
--Big thanks to my new colleague Jo who so kindly took the time to take a look at my project and come up with some fantastic ideas and suggestions. So unexpected and fantastic!
+-Big thanks to my new colleague **Jo** who so kindly took the time to take a look at my project and come up with some fantastic ideas and suggestions. So unexpected and fantastic!
 
 And lastly, I could not leave out the Code Institute team: the other students on Slack, the tutor support and all the mentors who are always welcoming and trying to help.
 
-Special mention to my 'May 2020' channel buddies for the constant chat, help and support. You guys are an amazing little group! Eespecially Ian, Emma, Chloe, Adam, Kamil..you guys are amazing and it's been such a blast sharing this course with you!  
+Special mention to my **May 2020** channel buddies for the constant chat, help and support. You guys are an amazing little group! Eespecially **Ian, Emma, Chloe, Adam, Kamil**..you guys are amazing and it's been such a blast sharing this course with you!  
 
 Many thanks as well to the assessors who will spend many long hours reading through all these files. 
 
