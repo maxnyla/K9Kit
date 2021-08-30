@@ -54,6 +54,16 @@ Several functions or sections were edited through media queries.
 
 I also tested this via my mobile devices and asked other people to test it and provide feedback as well.
 
+For the purpose of improving user experience when it comes to speed and responsiveness, I have compressed the images using [tinypng.com](https://tinypng.com/) 
+
+As can be seen below, the total reduction in image size on this site has been quite large.
+
+
+![tinypng image size saving results](https://github.com/maxnyla/k9kit/tree/master/static/readme/speed)
+
+
+It's worth noting that in addition to this resource, I have also manually resized many of the screenshots that were taken from the pages because they required extra cropping due to excess 
+white space, so this does not reflect the total saving when it comes to space.
 
 
 ## Browser Compatibility <a name="browsercomp"></a>
@@ -197,11 +207,3 @@ A manual testing process has been followed for this project in order to assess u
 
 
 
-
-
-
-
-***Challenges building the site***
-
-
-Whilst working on this project I encountered a series of issues that I needed to overcome. Please see below for details.
