@@ -23,28 +23,37 @@ The live site can be found [here](https://k9kit.herokuapp.com/)
 ## Table of Contents:  <a name="home"></a>
 
 - [Introduction](#introduction)
+
 - [User Experience](#ux)
   - [User Stories](#user-stories)
   - [Visual Identity](#visual-identity)
     - [Logo and branding](#logo)
     - [Colour scheme](#colours)
     - [Wireframes](#wireframes)
+
 - [Technologies Used](#technologies-used)
   - [Languages and Frameworks](#languages-and-frameworks)
   - [Tools and resources](#tools-and-resources)
+
 - [Features](#features)
     - [Features for future implementation](#future-feat)
+
 - [Database Design](#database-design)
+
 - [Testing](#testing)
+
 - [Deployment](#deployment)
   - [Local Hosting](#local-hosting)
   - [Live Hosting](#hosting)
   - [AWS](#aws)
+
 - [Credits](#credits)
   - [Images](#images)
   - [Image editing](#image-editing)
   - [Coding Ideas](#coding-ideas)
+  
 - [Acknowledgements](#acknowledgements)
+
 
 
 ## **Introduction**
@@ -142,6 +151,8 @@ Below are the different goals and aims of the site when viewed from the develope
 
 [Back to Table of Contents](#home)
 
+
+
 ### <ins>Visual Identity</ins>
 
 One of the main goals besides the data and functionality management for the site creator was to provide some escapism and a pleasant visual and navigational experience by making it an attractive and easy to navigate site. There are links to the relevant pages and sections in multiple places and the user experience is seamless and smooth.
@@ -149,6 +160,7 @@ One of the main goals besides the data and functionality management for the site
 A certain level of quirkiness and fun was also deliberately added to make the experience lighter.
 
 For this reason, the branding and colours are in keeping with this fun theme.
+
 
 
 ### <ins>Logo and branding</ins>
@@ -189,7 +201,9 @@ The colour wheel with the tonalities for the base colour scheme can be found bel
 
 
 
+
 ### <ins>Wireframes</ins>
+
 
 All the wireframes were created with [Microsoft Paint](https://jspaint.app/).
 
@@ -204,7 +218,10 @@ It is also worth nothing that, for the purpose of improving user experience, I h
 
 [Back to Table of Contents](#home)
 
+
+
 ## **Technologies Used**
+
 
 ### <ins>Languages and Frameworks</ins>
 
@@ -243,6 +260,7 @@ It is also worth nothing that, for the purpose of improving user experience, I h
 - [Heroku](https://www.heroku.com/home) - This hosting platform was used to deploy the live version of the website.
 
 
+
 ### <ins>Tools and resources</ins>
 
 - [Stripe](https://stripe.com/gb) - This ecommerce payment system was used for the site payment facilities.
@@ -263,6 +281,7 @@ It is also worth nothing that, for the purpose of improving user experience, I h
 
 
 [Back to Table of Contents](#home)
+
 
 
 ## **Features**
@@ -369,15 +388,16 @@ Django Allauth, specifically `django.contrib.auth.models` provided the **User** 
 
 | Name        | Database Key  | Field Type    | Type Validation  
 | ----------- | ------------- | ------------- | -------------------------- |                                         
-| Tip_title   | tip_title     | CharField     | max_length=254             |
-| Tip_body    | tip_body      | TextField     | null=True, blank=True      |
-| Tip_by      | tip_by        | CharField     | max_length=254             |
+| Tip Title   | tip_title     | CharField     | max_length=254             |
+| Tip Body    | tip_body      | TextField     | null=True, blank=True      |
+| Tip By      | tip_by        | CharField     | max_length=254             |
 
 
 
 ### **Checkout** App
 
 ### Order Model
+
 
 | Name            | Database Key    | Field Type                      | Type Validation                                                                      |
 | --------------- | --------------- | ------------------------------- | ------------------------------------------------------------------------------------ |
@@ -421,7 +441,7 @@ Django Allauth, specifically `django.contrib.auth.models` provided the **User** 
 
 ## **Testing**
 
-The full testing breakdown can be found [here](https://github.com/
+The full testing breakdown can be found [here](https://github.com/maxnyla/K9Kit/blob/master/TESTING.md)
 
 The below tools were used for code validation:
 
@@ -436,6 +456,7 @@ The below tools were used for code validation:
 
 
 [Back to Table of Contents](#home)
+
 
 
 ## **Deployment**
