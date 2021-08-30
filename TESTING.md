@@ -79,12 +79,12 @@ It has appeared to behave correctly on all these platforms and no issues were ob
 
 ## Code validation <a name="codeval"></a>
 
-I ran all my code through the various relevant validators:
+I ran all my code through the various relevant validators.
 
 -The [CSS Validation Service](https://jigsaw.w3.org/css-validator) for the CSS code.
 
 
-The CSS validator resulted in 
+The CSS validator resulted in one error to do with a font size, which I corrected, and multiple warnings which could be ignored as they were due to elements having the same colour for the border and other areas.
 
 
 ![css validation results](/static/readme/validation/css_val.png)

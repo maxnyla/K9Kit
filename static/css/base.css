@@ -459,7 +459,7 @@ i:hover {
 
 .card-detail-text {
     color: #f079c8;
-    font-size: largest;
+    font-size: xx-large;
     font-weight: 500;
 }
 
@@ -1048,5 +1048,3 @@ input[name='q']::placeholder {
     
 
 }
-
-
