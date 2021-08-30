@@ -26,7 +26,7 @@ def view_reviews(request):
 
     template = 'reviews/view_reviews.html'
     context = {
-        'view_reviews' : view_reviews,
+        'view_reviews': view_reviews,
     }
 
     return render(request, template, context)
@@ -45,8 +45,9 @@ def add_review(request):
 
             return redirect(reverse('reviews',))
         else:
-            messages.error(request, 'Failed to add review.\
-                                    Please ensure form is valid and try again.')
+            messages.error(
+                request, 'Failed to add review.\
+                        Please ensure form is valid and try again.')
     else:
         form = ReviewForm()
 

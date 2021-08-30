@@ -36,8 +36,9 @@ def add_newsletter(request):
             messages.success(request, 'Thanks! Your newsletter was added')
             return redirect(reverse('newsletters',))
         else:
-            messages.error(request, 'Failed to add newsletter.\
-                                    Please ensure form is valid and try again.')
+            messages.error(
+                request, 'Failed to add newsletter.\
+                        Please ensure form is valid and try again.')
     else:
         form = NewsletterForm()
 
@@ -66,7 +67,8 @@ def edit_newsletter(request, newsletter_id):
         form = NewsletterForm(request.POST, instance=newsletter)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Your newsletter was successfully edited.')
+            messages.success(
+                request, 'Your newsletter was successfully edited.')
 
             return redirect(reverse('newsletters'))
         else:
@@ -94,7 +96,6 @@ def delete_newsletter(request, newsletter_id):
             request, 'Sorry, only K9Kit admin has permission to do this.')
 
         return redirect(reverse('newsletter'))
-    
     newsletter = get_object_or_404(Newsletter, pk=newsletter_id)
     newsletter.delete()
     messages.success(request, 'Your newsletter was deleted!')

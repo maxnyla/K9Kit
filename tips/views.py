@@ -21,12 +21,11 @@ def tips(request):
 
 def view_tips(request):
     """ A view displaying all tips available """
-    
     tips = Tip.objects.all()
 
     template = 'tips/view_tips.html'
     context = {
-        'view_tips' : view_tips,
+        'view_tips': view_tips,
     }
 
     return render(request, template, context)
@@ -44,8 +43,9 @@ def add_tip(request):
 
             return redirect(reverse('tips',))
         else:
-            messages.error(request, 'Failed to add tip.\
-                                    Please ensure form is valid and try again.')
+            messages.error(
+                request, 'Failed to add tip.\
+                        Please ensure form is valid and try again.')
     else:
         form = TipForm()
 
