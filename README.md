@@ -11,7 +11,7 @@ This project was created for the last (fourth) Milestone Project of the Full Sta
 
 It was also a requirement to add payment facilities and this was achieved through using Stripe.
 
-The live site can be found [here](https://k9kit.herokuapp.com/). 
+The live site can be found [here](https://k9kit.herokuapp.com/)
 
 **For testing purposes, please use the following credit card details:**
 
@@ -131,7 +131,7 @@ Below is a list of the colours which were used as the main features of the site:
 
 The colour wheel for my base colour scheme can be found below:
 
-![image of main colours](/static/docs/readme/colours.png)
+![image of main colours](/static/readme/colours.png)
 
 
 
