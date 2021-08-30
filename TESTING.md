@@ -95,6 +95,8 @@ The CSS validator resulted in one error to do with a font size, which I correcte
 
 The PEP8 code validator gave me a few indentation errors and lines that were too long so I fixed all these before saving the files again and the code passed 
 this time, after the changes.
+One of the issues that the validator brought up was that one line was too long. However, when I changed this it meant that Django threw an error and would not load so I had to change it again and leave the longer line.
+As I understand, the issue with line length originated when screens were smaller so I believe they can be ignored on some occasions nowadays.
 
 
 ![app.py validation results](/static/readme/validation/pep8_val.png)
@@ -107,11 +109,9 @@ The HTML validation was a bit difficult, since the checks threw multiple errors 
 on the templates and also multiple errors are caused by the use of the } symbols in the Jinja templates. For this reason I decided to ignore the errors, since
 I am not aware of a way to bypass these.
 
-Since the HTML code is so extensive as there are a number of files, instead of posting each link here I have decided to post a link to the
-directory where all the results for the HTML validation can be found:
+- HTML validation checks
 
-
-[Link to all HTML validator results](/static/readme/validation)
+Since the HTML code is so extensive as there are a number of files, I have decided to not post screenshots as it would be very time consuming.
 
 
 I have also used the Chrome Developer Tools extensively throughout the project at every step. They have been very useful for each change that I made, 
@@ -129,15 +129,17 @@ would have taken a long time otherwise.
 This project includes defensive design, which has been implemented via two routes: 
 
 - first:
-  on the html templates themselves via minimum requirements when completing the forms, and 
+
+on the html templates themselves via the requirements when completing the forms or loading the templates.
   
 - secondly:
- via the Python code in the apps.py files, to request database checks before certain actions are completed.
+
+via the Python code in the app files, to request database checks before certain actions are completed.
 
 For example, if the session user does not match the username of a superuser, they will not be able to access restricted areas to add, delete or edit content because 
 the system will redirect them to another page.
 
-This design is also applied to the html code affecting navigation, by preventing users from seeing linkes to pages that they are not supposed to see.
+This design is also applied to the html code affecting navigation, by preventing users from seeing links to pages that they are not supposed to see.
 
 For example, a user who is not logged in will not be able to see the links to add reviews or to their account and so on.
 
@@ -192,8 +194,6 @@ A manual testing process has been followed for this project in order to assess u
 - Testing the add/ edit/ delete tips form as a superuser
 
   I added, edited and deleted newsletters to ensure everything was working correctly.
-
-
 
 
 
