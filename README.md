@@ -157,6 +157,11 @@ The logo, in keeping with the general 'cute' and fun design of the rest of the s
 
 It's simple, with basic and clean lines in a very neutral colour scheme which is black and blue. This blue colour is also seen in other areas of the site, to give a feeling of cohesion. Since the rest of the site is quite colourful, I felt like it was a good idea to keep the logo simple. The logo includes the name of the site which is again, playful and simple.
 
+<p align="center">
+  <img src="/static/readme/logo.png" 
+alt="logo"/>
+</p>
+
 The name for the site was chosen because of its playful undertones and the abbreviation of the word 'canine' as 'K9' which is very widely known and is short. This delivers an instant and powerful brand association and recognition. It also makes it immediately clear what the intended audience for the shop products is.
 
 The logo is encased in the site header, which is white. The fonts are black and the same blue as the logo for cohesion.
@@ -242,7 +247,7 @@ It is also worth nothing that, for the purpose of improving user experience, I h
 
 - [Stripe](https://stripe.com/gb) - This ecommerce payment system was used for the site payment facilities.
 
-- [Code Institute Course Content Boutique Ado](https://courses.codeinstitute.net/) – This website was based on the Code Institute Boutiqe Ado project: the main structure and model was taken from there.
+- [Code Institute Course Content Boutique Ado](https://www.codeinstitute.net/) – This website was based on the Code Institute Boutiqe Ado project: the main structure and model was taken from there.
 
 - The Code Institute **SLACK Community** - General resource.
 
@@ -254,13 +259,7 @@ It is also worth nothing that, for the purpose of improving user experience, I h
 
 - [Techsini](https://techsini.com/multi-mockup/index.php) - Responsive website mockup image generator.
 
-- [Guager](https://gauger.io/fonticon/) - This was used to create the favicon for the website.
-
-- [W3C Markup Validation Service](https://validator.w3.org/) - This was used to check for errors in the HTML and CSS code (More detail in the Testing section).
-
-- [JSHint](https://jshint.com/) - This was used to check for errors in the JavaScript and jQuery code (More detail in the Testing section).
-
-- [PEP8 online](http://pep8online.com/) -This was used to check that the Python code complied with formatting standards. 
+- [Gauger](https://gauger.io/fonticon/) - This was used to create the favicon for the website.
 
 
 [Back to Table of Contents](#home)
@@ -286,17 +285,30 @@ It is also worth nothing that, for the purpose of improving user experience, I h
 
 
 
+
+
 [Back to Table of Contents](#home)
+
+
 ## **Testing**
 
+The full testing breakdown can be found [here](https://github.com/
 
+The below tools were used for code validation:
 
+- [W3C Markup Validation Service](https://validator.w3.org/) - This was used to check for errors in the HTML and CSS code (More detail in the Testing section).
+
+- [JSHint](https://jshint.com/) - This was used to check for errors in the JavaScript and jQuery code (More detail in the Testing section).
+
+- [PEP8 online](http://pep8online.com/) -This was used to check that the Python code complied with formatting standards. 
 
 
 
 
 
 [Back to Table of Contents](#home)
+
+
 ## **Deployment**
 
 ### <ins>Local hosting</ins>
@@ -317,11 +329,19 @@ It is also worth nothing that, for the purpose of improving user experience, I h
 
 
 [Back to Table of Contents](#home)
+
+
 ## **Credits**
 
+The shop displayed on this website is purely fictional and created by myself.
 
+### <ins>images</ins>
 
+The images used for this project are a mix. Some are my own photos and others were taken from:
 
+- [Unsplash] (https://unsplash.com/)
+
+- [Shutterstock] (https://shutterstock.com/)
 
 
 
