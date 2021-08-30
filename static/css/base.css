@@ -764,7 +764,13 @@ input[name='q']::placeholder {
     color: #dd26a0bd;
 }
 
-.tip-card {
+/* .tip-card {
+    background: url('/media/tips-bones.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover; 
+} */
+
+.main-tips-container {
     background: url('/media/tips-bones.jpg') no-repeat center center;
     background-attachment: fixed;
     background-size: cover; 
