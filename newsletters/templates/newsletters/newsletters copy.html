@@ -15,13 +15,13 @@
 
 <div class="overlay"></div>
 
-<div class="container main-news-container mb-5 mt-5 pb-5">
+<div class="container-fluid main-news-container mb-5 mt-5 pb-5">
 
    <div class="container">
       <div class="row">
          <div class="col-12 text-center mt-3">
             <br>
-            <h2 class="newsletter-title mb-4"> <b>News</b></h2>
+            <h2 class="newsletter-title mb-4"> <b>Newsletters</b></h2>
             <br>
             <h5 class="review-subtitle">Keep up with all our news and all that's coming next!</h5>
             <br>
@@ -29,7 +29,7 @@
       </div>
    </div>
 
-   <!-- <div class="container newsletter-container"> -->
+   <div class="container newsletter-container">
       <div class="row newsletter-row">
          {% for newsletter in newsletters %}
             <div class="col-12">
@@ -42,10 +42,10 @@
 
                      {% if request.user.is_superuser %}
                         <small class="review-button ml-1">
-                           <a class="edit-newsletter" href="{% url 'edit_newsletter' newsletter.id %}">Edit News</a> | 
+                           <a class="edit-newsletter" href="{% url 'edit_newsletter' newsletter.id %}">Edit Newsletter</a> | 
                         </small>
                         <small class="review-button">
-                           <a class= "delete-newsletter" href="{% url 'delete_newsletter' newsletter.id %}">Delete News</a> 
+                           <a class= "delete-newsletter" href="{% url 'delete_newsletter' newsletter.id %}">Delete Newsletter</a> 
                         </small>
                      {% endif %}
 
@@ -55,30 +55,25 @@
             </div>
          {% endfor %} 
       </div>
+   </div>
 
-   <!-- </div> -->
-<!-- 
-   <div class="container newsletter-img-container"> -->
-
+   <div class="container newsletter-img-container">
       <div class="row">
-         <div class="col-12 mt-5">
+         <div class="col-12 text-center mt-5">
             <img class="w-100 h-60 news-image"  src="{{ MEDIA_URL }}y-news.jpg" class="img-fluid" alt="Responsive image">
          </div>
       </div>
-
-   <!-- </div> -->
+   </div>
 
    <div class="row add-newsletter">
       <!--Add newsletter button-->
-      {% if request.user.is_authenticated %}
          {% if request.user.is_superuser %}
             <div class=" col text-center mt-3 mb-3">
                <a href="{% url 'add_newsletter' %}" class="btn-add-news add-review-url">
-                  <span class="text-uppercase">Add News </span>
+                  <span class="text-uppercase">Add Newsletter </span>
                </a>
             </div>
          {% endif %}
-      {% endif %} 
       <!-- /. Add newsletter button-->
    </div>
          

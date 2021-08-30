@@ -951,7 +951,11 @@ input[name='q']::placeholder {
 }
 
 
-/* ------ Fixed top navbar on medium and upward ----- */
+/* -----  MEDIA QUERIES  ----------------- */
+
+
+/* ------ Medium and upward ----- */
+
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -967,9 +971,9 @@ input[name='q']::placeholder {
 }
 
 
-/* ------ When on mobile --- */
+/* ------ Very small screens, mobile --- */
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
 
     .header-container {
         padding-top: 116px;
@@ -992,4 +996,82 @@ input[name='q']::placeholder {
         margin: .5em;
     }
 }
+
+
+
+
+/* ------ Very small screens, mobile --- */
+
+@media screen and (max-width: 479px) {
+
+    #block-two {
+        background-color: #b8c6dd38;
+        /* height: 45em; */
+    }
+
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+
+    .top-link {
+        color: white;
+        font-size: medium;
+    }
+
+    .main-title {
+        color: #00ffffe6;
+        font-size: 1.5rem;
+    }
+    
+    .btn-add-news {
+        color: #f8f9fa;
+        letter-spacing: .1em;
+        font-size: large;
+        font-weight:600;
+        margin: .5em;
+    }
+
+    .block-two-h4 {
+        font-size: large;
+        margin-top: 2.5em;
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+
+    .block-two-text {
+        background-color: ghostwhite;
+        border-radius: 2.5em;
+        color: #dd26a0;
+        padding: 1.5em;
+        font-size: large;
+    }
+
+    .shop-now-button {
+        background: black;
+        border-radius: 1.5em;
+        color: white;
+        margin-top: 2em;
+        padding: 1em;
+    }
+
+    .reg-now-button {
+        background: #dd26a0;
+        border-radius: 2em;
+        color: white;
+        margin: 2em;
+        padding: .7em;
+        font-size: medium;
+    }
+
+    .footer-h4 {
+        font-size: 1.2rem;
+    }
+    
+
+}
+
 
