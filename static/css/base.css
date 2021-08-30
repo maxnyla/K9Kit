@@ -60,7 +60,6 @@ i:hover {
 .banner-text {
     text-transform: uppercase;
     color: white;
-    /* color: #00e7ff; */
 }
 
 .main-logo-link {
@@ -95,7 +94,6 @@ i:hover {
 .top-link:hover {
     color:#00ffffe6;
     text-decoration: none;
-    /* text-transform: uppercase; */
     font-style: italic;
 }
 
@@ -201,7 +199,6 @@ i:hover {
 }
 
 
-
 .footer-h4:hover,
 .footer-h4:active,
 .footer-h4:focus {
@@ -236,7 +233,6 @@ i:hover {
 
 
 #block-one {
-    /* background: url('/media/homepage-background-cropped.jpg') no-repeat center center fixed; */
     background: url('/media/home2.jpg') no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
@@ -389,8 +385,6 @@ i:hover {
     color: #f079c8;
     font-size: x-large;
     letter-spacing: .1em;
-    /* font-family: 'Anton', sans-serif; */
-    /* font-family: 'Righteous', cursive; */
 }
 
 .edit-product-button {
@@ -642,11 +636,7 @@ input[name='q']::placeholder {
 .btn-add-review:active,
 .btn-add-review:focus {
     background: #00ffffe6;
-    /* background: black; */
-    /* color: #00ffffe6; */
     color: white;
-    /* color: white; */
-
 }
 
 
@@ -683,15 +673,10 @@ input[name='q']::placeholder {
 
 
 .newsletter-row {
-    /* padding-left: 8em;
-    padding-right: 8em; */
     margin-top: 5em;
 }
 
 .newsletter-img-container {
-    /* background-color: #6495ed30; */
-    /* padding-left: 8.5em;
-    padding-right: 8.5em; */
     padding-bottom: 3em; 
 }
 
@@ -718,8 +703,6 @@ input[name='q']::placeholder {
     border-style: dashed;
     margin-bottom: 5em;
     padding-bottom: 3em;
-    /* padding-left: 3em;
-    padding-right: 3em; */
     padding-top: 3em;
 }
 
@@ -743,7 +726,6 @@ input[name='q']::placeholder {
 .btn-add-news:focus {
     background: black;
     color: #00ffffe6;
-    /* color: white; */
 }
 
 .news-image {
@@ -764,17 +746,12 @@ input[name='q']::placeholder {
     color: #dd26a0bd;
 }
 
-/* .tip-card {
-    background: url('/media/tips-bones.jpg') no-repeat center center;
-    background-attachment: fixed;
-    background-size: cover; 
-} */
-
-.main-tips-container {
+.tip-card {
     background: url('/media/tips-bones.jpg') no-repeat center center;
     background-attachment: fixed;
     background-size: cover; 
 }
+
 
 .tip-image2 {
     height: 20em;
@@ -999,14 +976,12 @@ input[name='q']::placeholder {
 
 
 
-
 /* ------ Very small screens, mobile --- */
 
 @media screen and (max-width: 479px) {
 
     #block-two {
         background-color: #b8c6dd38;
-        /* height: 45em; */
     }
 
     .header-container {
