@@ -759,6 +759,7 @@ input[name='q']::placeholder {
 
 .tip-card-body{
     background-color: #f8f9fae6;
+    padding:3em;
 }
 
 
