@@ -49,7 +49,6 @@ The live site can be found [here](https://k9kit.herokuapp.com/)
 
 - [Credits](#credits)
   - [Images](#images)
-  - [Image editing](#image-editing)
   - [Coding Ideas](#coding-ideas)
 
 - [Acknowledgements](#acknowledgements)
@@ -159,14 +158,30 @@ One of the main goals besides the data and functionality management for the site
 
 A certain level of quirkiness and fun was also deliberately added to make the experience lighter.
 
-For this reason, the branding and colours are in keeping with this fun theme.
+For this reason, the branding and colours are in keeping with this fun theme. Buttons and links are animated with a slight change of size when hovered on or pressed and many change their colour to a contrasting and much bolder one, to add to the bright and sparkly theme. 
+
+As an example. the 'Shop now' button on the home page goes from 
+
+**black**
+![black button](/static/readme/visuals/black.png)
+
+
+
+**to pink**
+![pink button](/static/readme/visuals/pink.png)
+
+
+Same for the LOGIN/REGISTER button, which goes inversely from pink to black. The fonts on the bottom navbar go to **italics** and change colour to the bright cyan blue as well as growing in size. The social media icons have the same behaviour.
+
 
 I wanted the homepage to be fun and inviting, and therefore spent a lot of time thinking about how to achieve this. I decided to go for a mix of bold colours with two striking images which are the front and back of the same dog, clothed in a funny but cute hoodie. Then I added some horizontal sections with two similar blue colours as background, creating some sort of parallax effect and some buttons inside them and other banners to add interest and link to other pages. I played around with transparencies in the backgrounds as I generally like that feature.
 
 The reviews, newsletters and tips pages are all different in their design but similar in structure: the posts are organised in cards for ease of reading and access and responsiveness on different devices. I used different images and colours to make each of them stand out.
 
-The product view page is, shall we say, more functional. It displays all the categories, with its respective links to all the product categoriess (clothing, toys, accessories) and their respective sub-categories (tops, bottoms, frocks, hoodies)/(soft/solid)/(hats, sunglasses, bandanas) as well as links to view Newsletterx, Tips and Reviews posts. The dropdown also allows user to go straight to the 'Post a Review' form but it will ask them to register or log in first if they are logged out.
-Same goes for the checkout and login/logout/register pages, as they are more functional and cleaner in order not to overcharge the site.
+The product view page is, shall we say, more functional. It displays all the categories, with its respective links to all the product categoriess (clothing, toys, accessories) and their respective sub-categories (tops, bottoms, frocks, hoodies)/(soft/solid)/(hats, sunglasses, bandanas) as well as links to view Newsletters, Tips and Reviews posts. The dropdown also allows user to go straight to the 'Post a Review' form but it will ask them to register or log in first if they are logged out.
+When in the general product or product detail view, if an image is hovered on it will become larger with an animation.
+
+The same goes for the checkout and login/logout/register pages, as they are more functional and cleaner in order not to overcharge the site.
 
 
 Here is a visual view of some of the main pages:
@@ -803,7 +818,7 @@ For the static css, js and media files to be stored and useable with Heroku, you
 [Back to Table of Contents](#home)
 
 
-###  LOCAL HOSTING
+###  <ins>Local Hostling</ins>
 
 If you wish to clone a copy of my project you will need to:
 
