@@ -54,11 +54,19 @@
    </div>
    
 
+   <div class="container newsletter-img-container">
+      <div class="row">
+         <div class="col-12 mt-5">
+            <img class="w-100 news-image"  src="{{ MEDIA_URL }}y-news.jpg" class="img-fluid" alt="Responsive image">
+         </div>
+      </div>
+   </div>
+
    <!--Add newsletter button-->
    {% if request.user.is_authenticated %}
       {% if request.user.is_superuser %}
-         <div class=" col text-center mt-3 mb-3">
-            <a href="{% url 'add_newsletter' %}" class="btn-add-news add-review-url">
+         <div class=" col text-center mt-1 mb-3">
+            <a href="{% url 'add_newsletter' %}" class="btn-add-news add-review-url mt-5">
                <span class="text-uppercase">Add News </span>
             </a>
          </div>
