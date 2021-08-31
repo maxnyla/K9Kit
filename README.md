@@ -161,7 +161,40 @@ A certain level of quirkiness and fun was also deliberately added to make the ex
 
 For this reason, the branding and colours are in keeping with this fun theme.
 
+I wanted the homepage to be fun and inviting, and therefore spent a lot of time thinking about how to achieve this. I decided to go for a mix of bold colours with two striking images which are the front and back of the same dog, clothed in a funny but cute hoodie. Then I added some horizontal sections with two similar blue colours as background, creating some sort of parallax effect and some buttons inside them and other banners to add interest and link to other pages. I played around with transparencies in the backgrounds as I generally like that feature.
 
+The reviews, newsletters and tips pages are all different in their design but similar in structure: the posts are organised in cards for ease of reading and access and responsiveness on different devices. I used different images and colours to make each of them stand out.
+
+The product view page is, shall we say, more functional. It displays all the categories, with its respective links to all the product categoriess (clothing, toys, accessories) and their respective sub-categories (tops, bottoms, frocks, hoodies)/(soft/solid)/(hats, sunglasses, bandanas) as well as links to view Newsletterx, Tips and Reviews posts. The dropdown also allows user to go straight to the 'Post a Review' form but it will ask them to register or log in first if they are logged out.
+Same goes for the checkout and login/logout/register pages, as they are more functional and cleaner in order not to overcharge the site.
+
+
+Here is a visual view of some of the main pages:
+
+![Home page1](/static/readme/visuals/home1.png)
+![Home page2](/static/readme/visuals/home2.png)
+![Home page3](/static/readme/visuals/home3.png)
+![Home page4](/static/readme/visuals/home4.png)
+
+
+![Products1](/static/readme/visuals/prod1.png)
+![Products2](/static/readme/visuals/prod2.png)
+![Products3](/static/readme/visuals/prod-detail.png)
+![Products3](/static/readme/visuals/prod-manage.png)
+
+
+![Reviews1](/static/readme/visuals/reviews1.png)
+![Reviews2](/static/readme/visuals/reviews2.png)
+
+![News1](/static/readme/visuals/news1.png)
+![News2](/static/readme/visuals/news2.png)
+
+![Tips1](/static/readme/visuals/tips1.png)
+![Tips2](/static/readme/visuals/tips2.png)
+
+
+
+[The rest of page screenshots can be found here]((https://github.com/maxnyla/k9kit/tree/master/static/readme/visuals/)
 
 
 ### <ins>Logo and branding</ins>
@@ -641,7 +674,7 @@ Deployment of the site was achieved by following the steps below:
 | EMAIL_HOST_PASS       | obtained from your email provider                                                 |
 | EMAIL_HOST_USER       | your email address                                                                |
 | SECRET_KEY            | obtained from [miniwebtool](https://miniwebtool.com/django-secret-key-generator/) |
-| STRIPE_PUBIC_KEY      | obtained from STRIPE                                                              |
+| STRIPE_PUBLIC_KEY      | obtained from STRIPE                                                              |
 | STRIPE_SECRET_KEY     | obtained from STRIPE                                                              |
 | STRIPE_WH_SECRET      | obtained from STRIPE                                                              |
 | USE_AWS               | True                                                                              |
