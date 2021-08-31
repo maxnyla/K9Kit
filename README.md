@@ -160,18 +160,43 @@ A certain level of quirkiness and fun was also deliberately added to make the ex
 
 For this reason, the branding and colours are in keeping with this fun theme. Buttons and links are animated with a slight change of size when hovered on or pressed and many change their colour to a contrasting and much bolder one, to add to the bright and sparkly theme. 
 
-As an example. the 'Shop now' button on the home page goes from 
+As an example. the 'Shop now' button on the home page goes:
 
-**black**
+**FROM BLACK**
+
 ![black button](/static/readme/visuals/black.png)
 
 
 
-**to pink**
+**TO PINK**
+
 ![pink button](/static/readme/visuals/pink.png)
 
 
-Same for the LOGIN/REGISTER button, which goes inversely from pink to black. The fonts on the bottom navbar go to **italics** and change colour to the bright cyan blue as well as growing in size. The social media icons have the same behaviour.
+The same for the LOGIN/REGISTER button, which goes inversely from pink to black:
+
+**FROM PINK**
+
+![pinkreg button](/static/readme/visuals/pinkreg.png)
+
+
+
+**TO BLACK**
+
+![blackreg button](/static/readme/visuals/blackreg.png)
+
+
+
+The fonts on the bottom navbar go to **italics** and change colour to the bright cyan blue as well as growing in size. The social media icons have the same behaviour:
+
+
+![pink icons](/static/readme/visuals/pinkicons.png)
+
+![blue icons](/static/readme/visuals/blueicons.png)
+
+![blue link1](/static/readme/visuals/bluelink.png)
+
+![blue link2](/static/readme/visuals/bluelink2.png)
 
 
 I wanted the homepage to be fun and inviting, and therefore spent a lot of time thinking about how to achieve this. I decided to go for a mix of bold colours with two striking images which are the front and back of the same dog, clothed in a funny but cute hoodie. Then I added some horizontal sections with two similar blue colours as background, creating some sort of parallax effect and some buttons inside them and other banners to add interest and link to other pages. I played around with transparencies in the backgrounds as I generally like that feature.
