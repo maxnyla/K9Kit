@@ -16,11 +16,8 @@
 <div class="overlay"></div>
 
 <div class="container-fluid main-tips-container mb-5 mt-5 pb-5">
-
       <div class="container newsletter-heading-cont">
-
          <div class="row">
-
             <div class="col-12 text-center mt-3">
                <br>
                <h2 class="review-title mb-4"> <b>Tips</b></h2>
@@ -28,13 +25,8 @@
                <h5 class="review-subtitle">This is where you can get lots of great info and tips for a fun life with your fluffs!</h5>
                <br>
             </div>
-
          </div>
-
-
-
       </div>
-
 
       <div class="container tip-container">
          <div class="row tip-card newsletter-row mb-5 mt-5">
@@ -62,29 +54,22 @@
                </div>
             {% endfor %} 
          </div>
-         
       </div>
 
       <div class="container tip-img-container">
          <div class="row add-newsletter">
             <!--Add tip button-->
             {% if request.user.is_superuser %}
-         
                <div class=" col-12 text-center mt-3 mb-3">
                   <a href="{% url 'add_tip' %}" class="btn-add-news add-review-url">
                      <span class="text-uppercase">Add Tip</span>
                   </a>
                </div>
-         
          </div>
-         {% endif %}
-         <!-- /. Add tip button-->
-         
-
+           {% endif %}
+          <!-- /. Add tip button-->
       </div>
-
 </div>
-
 <!-- /. Tips page -->
 
 {% endblock %}

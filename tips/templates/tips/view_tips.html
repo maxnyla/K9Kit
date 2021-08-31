@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block content %}
-<!-- newsletter page  -->
+<!-- view tips page  -->
 <div class="overlay"></div>
 <div class="container newsletter-heading-cont">
    <div class="row">
@@ -18,7 +18,7 @@
          <br>
          <h2 class="newsletter-title mb-4"> <b>Tips</b></h2>
          <br>
-         <h5 class="review-subtitle">This is where you can keep up with all our news and get lots of great info!</h5>
+         <h5 class="review-subtitle">This is where you can keep up with all our news and get lots of great tips!</h5>
          <br>
       </div>
    </div>
@@ -39,10 +39,10 @@
                      
                   {% if request.user.is_superuser %}
                      <small class="review-button ml-1">
-                        <a class="edit-newsletter" href="">Edit Newsletter</a> | 
+                        <a class="edit-newsletter" href="">Edit Tip</a> | 
                      </small>
                      <small class="review-button">
-                        <a class= "delete-newsletter" href="">Delete Newsletter</a> 
+                        <a class= "delete-newsletter" href="">Delete Tip</a> 
                      </small>
                   {% endif %}
                </div>
@@ -64,7 +64,7 @@
    </div>
 </div>
 
-   <!--Add newsletter button-->
+   <!--Add tip button-->
 
 <!-- <div class="container"> -->
    {% if request.user.is_superuser %}
@@ -72,14 +72,14 @@
       <!-- {% for newsletter in newsletters %} -->
          <div class=" col text-center mt-3 mb-3 btn-add-review">
             <a href="" class="add-review-url">
-                <span class="text-uppercase">Add Newsletter </span>
+                <span class="text-uppercase">Add tip</span>
             </a>
          </div>
       <!-- {% endfor %} -->
    </div>
    {% endif %}
 <!-- </div> -->
-   <!-- /. Add newsletter button-->
-<!-- /. Newsletter page -->
+   <!-- /. Add tip button-->
+<!-- /. Tip page -->
 
 {% endblock %}
