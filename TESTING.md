@@ -59,7 +59,7 @@ For the purpose of improving user experience when it comes to speed and responsi
 As can be seen below, the total reduction in image size on this site has been quite large.
 
 
-![tinypng image size saving results](https://github.com/maxnyla/k9kit/tree/master/static/readme/speed)
+[tinypng image size saving results](https://github.com/maxnyla/k9kit/tree/master/static/readme/speed)
 
 
 It's worth noting that in addition to this resource, I have also manually resized many of the screenshots that were taken from the pages because they required extra cropping due to excess 
