@@ -181,6 +181,10 @@ A manual testing process has been followed for this project in order to assess u
   All the relevant flash messages were also checked for accuracy and I ensured everything was working properly before moving on
 
 
+- Testing the purchase functionality
+
+  I tried the whole life cycle of a purchase several times, to ensure I was receiving the correct toasts, and that the checkout process worked correctly and that the order displayed in my profile.
+
 - Testing the add/ edit/ delete products form as a superuser
 
   I added, edited and deleted different products to ensure everything was working correctly.
@@ -203,7 +207,7 @@ A manual testing process has been followed for this project in order to assess u
 
 - Testing the add/ edit/ delete tips form as a superuser
 
-  I added, edited and deleted newsletters to ensure everything was working correctly.
+  I added, edited and deleted tips to ensure everything was working correctly.
 
 
 
