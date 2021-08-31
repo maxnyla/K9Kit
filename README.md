@@ -171,11 +171,15 @@ Same goes for the checkout and login/logout/register pages, as they are more fun
 
 Here is a visual view of some of the main pages:
 
+* Home
+
 ![Home page1](/static/readme/visuals/home1.png)
 ![Home page2](/static/readme/visuals/home2.png)
 ![Home page3](/static/readme/visuals/home3.png)
 ![Home page4](/static/readme/visuals/home4.png)
 
+
+* Products
 
 ![Products1](/static/readme/visuals/prod1.png)
 ![Products2](/static/readme/visuals/prod2.png)
@@ -183,18 +187,49 @@ Here is a visual view of some of the main pages:
 ![Products3](/static/readme/visuals/prod-manage.png)
 
 
+* Reviews
+
 ![Reviews1](/static/readme/visuals/reviews1.png)
 ![Reviews2](/static/readme/visuals/reviews2.png)
+
+
+* Newsletters
 
 ![News1](/static/readme/visuals/news1.png)
 ![News2](/static/readme/visuals/news2.png)
 
+
+* Tips
+
 ![Tips1](/static/readme/visuals/tips1.png)
 ![Tips2](/static/readme/visuals/tips2.png)
+![Tips3](/static/readme/visuals/add-tip.png)
+![Tips4](/static/readme/visuals/edit-tip.png)
+
+
+* Bag
+
+![Bag](/static/readme/visuals/bag.png)
+
+
+* Checkout
+
+![Checkout](/static/readme/visuals/checkout.png)
+
+
+* Profile
+
+![Profile](/static/readme/visuals/profile.png)
+
+
+* Purchase
+
+![Purchase](/static/readme/visuals/purchase.png)
 
 
 
-[The rest of page screenshots can be found here]((https://github.com/maxnyla/k9kit/tree/master/static/readme/visuals/)
+
+[All the page screenshots can be found here]((https://github.com/maxnyla/k9kit/tree/master/static/readme/visuals/)
 
 
 ### <ins>Logo and branding</ins>
