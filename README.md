@@ -43,9 +43,10 @@ The live site can be found [here](https://k9kit.herokuapp.com/)
 - [Testing](#testing)
 
 - [Deployment](#deployment)
-  - [Local Hosting](#local-hosting)
   - [Live Hosting](#hosting)
   - [AWS](#aws)
+  - [Local Hosting](#local-hosting)
+  
 
 - [Credits](#credits)
   - [Images](#images)
@@ -687,7 +688,7 @@ The below tools were used for code validation:
 
 ## **Deployment**
 
-### <ins>Hosting</ins>
+### <ins>Live Hosting</ins>
 
 The site is hosted on [Heroku](https://www.heroku.com/home).
 
@@ -850,7 +851,7 @@ For the static css, js and media files to be stored and useable with Heroku, you
 [Back to Table of Contents](#home)
 
 
-###  <ins>Local Hostling</ins>
+###  <ins>Local Hosting</ins>
 
 If you wish to clone a copy of my project you will need to:
 
